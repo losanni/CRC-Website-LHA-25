@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+.map {
+  display: block;
+  z-index: 0;
+}
+
+.element {
+  position: absolute;
+  /* Uncomment below to show rectangles */
+  /* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+main {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
+#fire {
+  width: 282px;
+  height: 300px;
+  bottom: 190px;
+  left: 195px;
+}
+
+#water {
+  width: 287px;
+  height: 278px;
+  top: 162px;
+  left: 199px;
+}
+
+#air {
+  width: 311px;
+  height: 291px;
+  bottom: 191px;
+  right: 168px;
+}
+
+#earth {
+  width: 265px;
+  height: 248px;
+  top: 160px;
+  right: 195px;
+}
