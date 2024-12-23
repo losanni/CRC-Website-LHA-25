@@ -4,51 +4,144 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   scrollbar-width: none;
 }
 
-.map {
-  display: block;
-  z-index: 0;
-}
-
-.element {
-  position: absolute;
-  /* Uncomment below to show rectangles */
-  /* background-color: rgba(0, 0, 0, 0.2); */
-}
-
-main {
+#map-container {
   position: relative;
-  width: max-content;
-  height: max-content;
+  width: 90vw; 
+  aspect-ratio: 1 / 1;
+  background: url('assets/map/complete-map-og.png') no-repeat center center;
+  background-size: contain;
+  overflow: hidden;
 }
 
-#fire {
-  width: 282px;
-  height: 300px;
-  bottom: 190px;
-  left: 195px;
+.map {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-#water {
-  width: 287px;
-  height: 278px;
-  top: 162px;
-  left: 199px;
+.map-icon-container {
+  position: absolute;
+  transform: translate(-50%, -50%); 
+  transition: transform 0.3s ease;
+  z-index: 5;
 }
 
-#air {
-  width: 311px;
-  height: 291px;
-  bottom: 191px;
-  right: 168px;
+.map-icon-container:hover {
+  transform: translate(-50%, -50%) scale(1.25); /* For some reason keep the center code */
 }
 
-#earth {
-  width: 265px;
-  height: 248px;
-  top: 160px;
-  right: 195px;
+.map-icon {
+  width: 15vw;
+  height: auto;
+  border: 1px solid red; /* FOR DEGUB */
+}
+
+#fire-icon {
+  top: 70%; 
+  left: 15%;
+}
+
+#water-icon {
+  top: 27%;
+  left: 13%;
+}
+
+#air-icon {
+  top: 70%;
+  left: 87%;
+}
+
+#earth-icon {
+  top: 27%;
+  left: 90%;
+}
+
+/* Islands */
+/* Edit the 'img' to change the size */
+
+.map-island {
+  height: auto; 
+  border: 1px solid red; /* Debug  */
+}
+
+.map-island-container {
+  position: absolute;
+  transform: translate(-50%, -50%); 
+  transition: transform 0.3s ease;
+}
+
+.map-island-container:hover {
+  transform: translate(-50%, -50%) scale(1.25); /* For some reason keep the center code */
+}
+
+#fire-island {
+  top: 47%;
+  left: 30%;
+  z-index: 1;
+}
+
+#fire-island-img {
+  width: 30vw;
+}
+
+.air-island {
+  z-index: 2;
+}
+
+#air-island-br {
+  top: 60%;
+  left: 83%;
+}
+
+#air-island-br-img{
+  width: 7.5vw;
+}
+
+#air-island-lt {
+  top: 37%;
+  left: 27%;
+}
+
+#air-island-lt-img {
+  width: 15vw;
+}
+
+#air-island-bl {
+  top: 65%;
+  left: 43%;
+}
+
+#air-island-bl-img {
+  width: 20vw;
+}
+
+
+#earth-island {
+  top: 48%;
+  left: 60%;
+}
+
+#earth-island-img {
+  width: 50vw;
+}
+
+#water-island-top {
+  top: 25%;
+  left: 50%;
+}
+#water-island-img-top {
+  width: 20vw;
+}
+
+#water-island-bottom {
+  top: 75%;
+  left: 50%;
+}
+
+#water-island-img-bottom {
+  width: 20vw;
 }
