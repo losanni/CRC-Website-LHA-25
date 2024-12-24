@@ -1,0 +1,143 @@
+#map-container {
+  position: relative;
+  width: 90vw; 
+  aspect-ratio: 1 / 1;
+  background: url('/assets/map/map-background.png') no-repeat center center;
+  background-size: contain;
+  overflow: hidden;
+}
+
+/* Simialr code, just change png */
+.map { 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background: url('assets/map/map-cloud-frame.png') no-repeat center center;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.map-icon-container {
+  position: absolute;
+  transform: translate(-50%, -50%); 
+  transition: transform 0.3s ease;
+  z-index: 6;
+}
+
+.map-icon-container:hover {
+  transform: translate(-50%, -50%) scale(1.25); /* For some reason keep the center code */
+}
+
+.map-icon {
+  width: 15vw;
+  height: auto;
+  border: 1px solid red; /* FOR DEGUB */
+}
+
+#fire-icon {
+  top: 70%; 
+  left: 15%;
+}
+
+#water-icon {
+  top: 27%;
+  left: 13%;
+}
+
+#air-icon {
+  top: 70%;
+  left: 87%;
+}
+
+#earth-icon {
+  top: 27%;
+  left: 90%;
+}
+
+/* Islands */
+/* Edit the 'img' to change the size */
+
+.map-island {
+  height: auto; 
+  border: 1px solid red; /* Debug  */
+}
+
+.map-island-container {
+  position: absolute;
+  transform: translate(-50%, -50%); 
+  transition: transform 0.3s ease;
+}
+
+.map-island-container:hover {
+  transform: translate(-50%, -50%) scale(1.25); /* For some reason keep the center code */
+}
+
+#fire-island {
+  top: 47%;
+  left: 30%;
+  z-index: 3;
+}
+
+#fire-island-img {
+  width: 30vw;
+}
+
+#air-island-br {
+  top: 60%;
+  left: 83%;
+  z-index: 4;
+}
+
+#air-island-br-img{
+  width: 7.5vw;
+}
+
+#air-island-lt {
+  top: 37%;
+  left: 27%;
+  z-index: 4;
+}
+
+#air-island-lt-img {
+  width: 15vw;
+}
+
+#air-island-bl {
+  top: 65%;
+  left: 43%;
+  z-index: 4;
+}
+
+#air-island-bl-img {
+  width: 20vw;
+}
+
+#earth-island {
+  top: 48%;
+  left: 60%;
+  z-index: 2;
+}
+
+#earth-island-img {
+  width: 50vw;
+}
+
+#water-island-top {
+  top: 25%;
+  left: 50%;
+  z-index: 5;
+}
+#water-island-img-top {
+  width: 20vw;
+}
+
+#water-island-bottom {
+  top: 75%;
+  left: 50%;
+  z-index: 5;
+}
+
+#water-island-img-bottom {
+  width: 20vw;
+}
