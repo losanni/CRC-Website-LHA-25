@@ -18,6 +18,7 @@ html, body {
     background-size: cover;
     background-attachment: fixed;
     overflow-y: auto;  /* Makes content inside scrollable to replicate effect we want */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y */
 }
 
 .element-container {
