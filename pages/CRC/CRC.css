@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+#avatar-intro-bg {
+    height: 100vh; 
+    
+     /* Colour code generated on: https://cssgradient.io/ */
+    background: radial-gradient(circle, rgba(146,28,19,1) 0%, rgba(33,2,3,1) 100%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: auto;  /* Makes content inside scrollable to replicate effect we want */
+}
+
+.element-container {
+    display: flex;
+    border: 3px solid yellow;
+    height: 100vh;  /* Each element container takes the most space it can */
+
+    /* for now since we have the text only, REMEMBER ALL THE ELEMENTS ARE CENTRED */
+    justify-content: center;
+    align-items: center;
+}
+
+/* default, hide it */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* We can just fade in on hover since it's the same as saying it's 'focused' */
+.fade-in:hover {
+    opacity: 1;
+}
+
+.element-text-big {
+    color: rgb(140, 122, 100); /* Stole the colour from the intro */
+    font-size: 30em;
+}
