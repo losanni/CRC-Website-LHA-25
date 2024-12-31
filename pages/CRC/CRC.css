@@ -4,6 +4,10 @@ html, body {
     height: 100%; 
 }
 
+/* Essentially you scroll and they fade in/out to give the illusion that the 'text changes' */
+/* Since the background colour doesn't change, it's an optical illusion. */
+/* in reality you scroll over the page and the elements */
+ 
 #avatar-intro-bg {
     height: 100vh; 
     
