@@ -9,21 +9,28 @@
 <body>
     <div id="avatar-intro-bg">
         <div class="element-container fade-in">
-            <div class="element-text-big">Water</div>
+            <div class="element-text-big" id="big-water">Water</div>
         </div>
         <div class="element-container fade-in">
-            <div class="element-text-big">Earth</div>
+            <div class="element-text-big" id="big-earth">Earth</div>
         </div>
         <div class="element-container fade-in">
-            <div class="element-text-big">Fire</div>
+            <div class="element-text-big" id="big-fire">Fire</div>
         </div>
         <div class="element-container fade-in">
-            <div class="element-text-big">Air</div>
+            <div class="element-text-big" id="big-air">Air</div>
         </div>
     </div>
 
     <div>
         rest of blah blah
     </div>
+
+    <div id="translation-container">
+        <button type="button" onclick="setLang('en')" id="english-button">EN</button>
+        <button type="button" onclick="setLang('fr')" id="french-button">FR</button>
+    </div>
 </body>
+  <!-- Put locale at the bottom so its checker runs after the dom is loaded -->
+  <script src="/locale.js"></script>
 </html>
