@@ -6,7 +6,7 @@
     <title>LHA Website</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/map.css">
-    <link rel="stylesheet" href="/avatar.css">
+    <link rel="stylesheet" href="/avatar-translation.css">
     <script defer src="/main.js"></script>
     <script defer src="/avatar.js"></script>
   </head>
@@ -74,8 +74,11 @@
     </div>
 
     <div id="translation-container">
-        <button type="button" onclick="setLang('en')" id="english-button">EN</button>
-        <button type="button" onclick="setLang('fr')" id="french-button">FR</button>
+        <a href="/">
+            <img id="translation-home-img" src="/assets/LHA/LHA Avatar small.webp" alt="Home">
+        </a>
+        <button type="button" onclick="setLang('fr')" id="language-button-fr" class="language-button">FR</button>
+        <button type="button" onclick="setLang('en')" id="language-button-en" class="language-button" style="display: none;">EN</button>
     </div>
   </body>
   <!-- Put locale at the bottom so its checker runs after the dom is loaded -->

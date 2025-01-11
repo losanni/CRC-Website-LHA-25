@@ -3,6 +3,10 @@
 // Checks if we have a language set from last time, if not default to user's browser
 let language = localStorage.getItem("lang") || navigator.language
 
+// These are the ones at the top right navbar
+const languageButtonFr = document.getElementById("language-button-fr")
+const languageButtonEn = document.getElementById("language-button-en")
+
 console.log(language) //debug delete later
 
 // Create an event to use later when we change language
@@ -52,9 +56,16 @@ document.addEventListener("langChange", (e) => {
         }
 
         getData()
+
+        languageButtonEn.style.display = 'block'
+        languageButtonFr.style.display = 'none'
     } else {
         // Otherwise, its english so refresh because our html file is eng
         console.log("Changed to english") //debug
+
+        // Hide en, show fr button
+        languageButtonEn.style.display = 'none'
+        languageButtonFr.style.display = 'block'
         window.location.reload();
     }
 })
@@ -62,6 +73,9 @@ document.addEventListener("langChange", (e) => {
 // First check for french
 if (navigator.language.includes('fr') || localStorage.getItem("lang") === "fr") {
     document.dispatchEvent(langChange)
+
+    // Hide fr button
+    languageButtonFr.style.display = 'none'
 }
 
 // Handles the button click

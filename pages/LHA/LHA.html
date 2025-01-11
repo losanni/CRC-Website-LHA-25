@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaurenHill Robotics</title>
-    <link rel="stylesheet" href="LHA.html">
+    <link rel="stylesheet" href="LHA.css">
+    <link rel="stylesheet" href="/avatar-translation.css">
 </head>
 <body>
     <img src="/assets/LHA/laurenhilll_sr_logo.png" alt="LaurenHill Academy Senior Campus">
@@ -14,6 +15,14 @@
 
     <div id="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2596.0868802059285!2d-73.69689125073491!3d45.50311235570709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9181ae6881afd%3A0xb265cd79a9a9669e!2sLaurenHill%20Academy!5e1!3m2!1sen!2sca!4v1734988411788!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div id="translation-container">
+        <a href="/">
+            <img id="translation-home-img" src="/assets/LHA/LHA Avatar small.webp" alt="Home">
+        </a>
+        <button type="button" onclick="setLang('fr')" id="language-button-fr" class="language-button">FR</button>
+        <button type="button" onclick="setLang('en')" id="language-button-en" class="language-button" style="display: none;">EN</button>
     </div>
 </body>
     <script src="/locale.js"></script>
