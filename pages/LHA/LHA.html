@@ -8,14 +8,47 @@
     <link rel="stylesheet" href="/avatar-translation.css">
 </head>
 <body>
-    <img src="/assets/LHA/laurenhilll_sr_logo.png" alt="LaurenHill Academy Senior Campus">
-    <img src="/assets/LHA/LHA Avatar.png" alt="LHA Robotics Avatar">
-    <img src="/assets/LHA/LHA Robotics.png" alt="LHA Robotics Logo">
-    <img src="/assets/LHA/splashlhaemblem.png" alt="LaurenHill Academy Logo">
+
+    <div class="scrollable-bg" id="top-section">
+        <div class="scrollable-bg" id="bg1">
+
+            <div class="images-container">
+                <img src="/assets/LHA/splashlhaemblem.png" alt="LaurenHill Academy Logo" width="200px" class="bg-image">
+                <img src="/assets/LHA/LHA Robotics.png" alt="LaurenHill Academy Logo" width="200px" class="bg-image">
+            </div>
+
+            <div class="scrollable-bg">
+                <div class="element-container fade-in">
+                    <div class="element-text-big" id="lha-robotics-text">LHA Robotics</div>
+                </div>
+                <div class="element-container fade-in">
+                    <div class="element-text-big" id="lha-robotics-openness-text">The most important thing about Robotics at LHA is its , anyone can join regardless of academics, skill, program, etc.. As long as you’re interested in anything we need, we want you.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scrollable-bg" id="bg2">
+
+            <div class="images-container">
+                <img src="/assets/LHA/LHA Avatar.png" alt="LaurenHill Academy Logo" width="200px" class="bg-image">
+            </div>
+
+            <div class="element-container fade-in">
+                <div class="element-text-big" id="theme-text">Our theme this year, Avatar: The Last Airbender.</div>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="team-text">Our Team</h1>
+
+    <div id="team-image-container">
+        <img src="https://placehold.co/600x400" alt="Team 2025" srcset="">
+    </div>
 
     <div id="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2596.0868802059285!2d-73.69689125073491!3d45.50311235570709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9181ae6881afd%3A0xb265cd79a9a9669e!2sLaurenHill%20Academy!5e1!3m2!1sen!2sca!4v1734988411788!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
 
     <div id="translation-container">
         <a href="/">
@@ -23,6 +56,19 @@
         </a>
         <button type="button" onclick="setLang('fr')" id="language-button-fr" class="language-button">FR</button>
         <button type="button" onclick="setLang('en')" id="language-button-en" class="language-button" style="display: none;">EN</button>
+    </div>
+
+    <!-- Avatar Progress -->
+    <div id="avatar-progress">
+        <img class="avatar-progress-icon" id="avatar-prog-water-icon" src="/assets/map/water-nation.png" alt="Avatar Progress Water Icon">
+
+        <img class="avatar-progress-icon" id="avatar-prog-fire-icon" src="/assets/map/fire-nation.png" alt=" Avatar Progress Fire Icon">
+
+        <img class="avatar-progress-icon" id="avatar-prog-air-icon" src="/assets/map/air-nation.png" alt="Avatar Progress Air Icon">
+        
+        <img class="avatar-progress-icon" id="avatar-prog-earth-icon" src="/assets/map/earth-nation.png" alt="Avatar Progress Earth Icon">
+
+        <img class="avatar-progress-icon" id="avatar-prog-avatar-icon" src="https://placehold.co/600x400/EEE/31343C" alt="Avatar Progress Avater Icon">
     </div>
 </body>
     <script src="/locale.js"></script>
