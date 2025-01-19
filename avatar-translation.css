@@ -28,6 +28,7 @@
     /* Horzontal */
     display: flex;
     gap: 5px;
+    flex-shrink: 0; 
     
     /* Top right */
     position: fixed;
@@ -37,8 +38,6 @@
     margin: 10px; 
     background: #e1b790;
     padding: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
     border-radius: 5%;
     
     z-index: 100; /* Force on top */
@@ -47,9 +46,6 @@
 #translation-home-img {
     height: 7vh;
     width: auto;
-    padding: 0;
-    margin: 0;
-
     transition-duration: 0.4s;
 }
 
@@ -64,7 +60,7 @@
     border-radius: 5%;
 
     background: none;
-    width: 4vw;
+    width: auto;
     color: white;
 
     padding: 0;

@@ -1,5 +1,6 @@
 * {
     scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 html, body {
@@ -46,9 +47,29 @@ html, body {
     opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+    #avatar-intro-bg {
+        height: auto; 
+        background-size: contain;
+        overflow-y: auto;
+    }
+
+    /* Stack elements vertically */
+    .element-container {
+        flex-direction: column;
+    }
+
+    /* Ignore fade animation */
+    .fade-in {
+        opacity: 1;
+    }
+}
+
 .element-text-big {
     color: rgb(140, 122, 100); /* Stole the colour from the intro */
-    font-size: 30em;
+
+    font-size: clamp(5em, 15vw, 30em); /* Trick so font resizes based on screen size */
+    text-align: center;
 }
 
 /* This is the frist paragraph. 50/50 img and text */
@@ -82,8 +103,9 @@ html, body {
     margin-top: 0;
     padding-top: 0;
     text-align: center;
-    font-size: 5em;
     margin-bottom: 7vh;
+
+    font-size: clamp(3em, 4em, 5em);
 }
 
 /* This is the next section. Describes the parts */
@@ -120,4 +142,38 @@ html, body {
     text-align: center;
     font-size: 1em;
     height: 80%;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    
+    /* Change the flex to vertical on mobile since they're tighter */
+    .element-container,
+    #crc-comp-gen,
+    #crc-comp-parts {
+        flex-direction: column;
+    }
+
+    #crc-text-container,
+    #crc-img-container {
+        width: 100%; /* Full width on mobile */
+        text-align: center; /* It looks better centered */
+        height: 100vh;
+    }
+
+    #crc-comp-description {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .horizontal-element {
+        width: 90%; 
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .horizontal-element-text {
+        height: auto;
+    }
+
 }
