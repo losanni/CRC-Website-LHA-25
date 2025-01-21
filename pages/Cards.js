@@ -18,6 +18,25 @@ template.innerHTML = `
       border-color: #6e6d29;
     }
 
+    /* Fix these colours */
+    .profile-card-fire {
+    background-color: #8b0000; /* Dark Red */
+    color: #ff4500; /* Orange-Red */
+    border-color: #b22222; /* Firebrick */
+  }
+
+  .profile-card-water {
+    background-color: #001f3f; /* Dark Blue */
+    color: #00bfff; /* Deep Sky Blue */
+    border-color: #4682b4; /* Steel Blue */
+  }
+
+  .profile-card-air {
+    background-color: #ffffff; /* White */
+    color: #a9a9a9; /* Dark Gray */
+    border-color: #dcdcdc; /* Gainsboro */
+  }
+
     .profile-card img {
       border-radius: 50%;
     }
@@ -46,13 +65,13 @@ class ProfileCard extends HTMLElement {
     this.shadowRoot.appendChild(template.content.cloneNode(true))
     this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name')
     this.shadowRoot.querySelector('img').src = this.getAttribute('avatar')
-    this.shadowRoot.querySelector('p#info').innerHTML +=
+    this.shadowRoot.querySelector('p#info').innerText +=
       this.getAttribute('info')
-    this.shadowRoot.querySelector('p#grade').innerHTML +=
+    this.shadowRoot.querySelector('p#grade').innerText +=
       this.getAttribute('grade')
     this.shadowRoot
-      .querySelector('.profile-card')
-      .classList.add('profile-card-' + this.getAttribute('element'))
+    .querySelector('.profile-card')
+    .classList.add('profile-card-' + window.location.pathname.split('/').pop().replace('.html', '')) // it gets the team based on the url aka which team page
   }
 }
 
