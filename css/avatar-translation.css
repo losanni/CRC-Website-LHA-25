@@ -1,0 +1,76 @@
+#avatar-progress {
+  /* Horzontal */
+  display: flex;
+  gap: 10px;
+
+  /* Bottom right */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  margin: 10px;
+  background: #e1b790;
+  padding: 10px;
+  border-radius: 5%;
+
+  z-index: 100; /* Force on top */
+}
+
+.avatar-progress-icon {
+  height: 7vh;
+  width: auto;
+  filter: grayscale(100%); /* Default to grey */
+}
+
+/* Translation + home nav bar */
+
+#translation-container {
+  /* Horzontal */
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+
+  /* Top right */
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  margin: 10px;
+  background: #e1b790;
+  padding: 10px;
+  border-radius: 5%;
+
+  z-index: 100; /* Force on top */
+}
+
+#translation-home-img {
+  height: 7vh;
+  width: auto;
+  transition-duration: 0.4s;
+}
+
+#translation-home-img:hover {
+  transform: scale(1.25);
+}
+
+/* Translation buttons */
+
+.language-button {
+  border: black;
+  border-radius: 5%;
+
+  background: none;
+  width: auto;
+  color: white;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 2em;
+
+  transition-duration: 0.4s;
+}
+
+.language-button:hover {
+  transform: scale(1.25);
+}

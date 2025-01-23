@@ -4,90 +4,169 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LHA Website</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/map.css">
-    <link rel="stylesheet" href="/avatar-translation.css">
-    <script defer src="/main.js"></script>
-    <script defer src="/avatar.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/map.css" />
+    <script defer type="module" src="/js/main.js"></script>
   </head>
   <body>
     <main>
-        <div id="map-container">
-           <div class="map">
-            <!-- Team Icons around the edges-->
-            <a class="map-icon-container" id="water-icon" href="/pages/water/water.html">
-                <img class="map-icon" src="/assets/map/water-nation.png" alt="Water Icon ASSOCIATE TO TEAM">
-            </a>
-            <a class="map-icon-container" id="fire-icon" href="/pages/fire/fire.html">
-                <img class="map-icon" src="/assets/map/fire-nation.png" alt="Fire Icon ASSOCIATE TO TEAM">
-            </a>
-            <a class="map-icon-container" id="air-icon" href="/pages/air/air.html">
-                <img class="map-icon" src="/assets/map/air-nation.png" alt="Air Icon ASSOCIATE TO TEAM">
-            </a>
-            <a class="map-icon-container" id="earth-icon" href="/pages/earth/earth.html">
-                <img class="map-icon" src="/assets/map/earth-nation.png" alt="Earth Icon ASSOCIATE TO TEAM">
-            </a>
-            <!-- // -->
+      <div id="map-container">
+        <div class="map">
+          <!-- Team Icons around the edges-->
+          <a
+            class="map-icon-container"
+            id="water-icon"
+            href="/pages/water/water.html"
+          >
+            <img
+              class="map-icon"
+              src="/assets/map/water-nation.png"
+              alt="Water Icon ASSOCIATE TO TEAM"
+            />
+          </a>
+          <a
+            class="map-icon-container"
+            id="fire-icon"
+            href="/pages/fire/fire.html"
+          >
+            <img
+              class="map-icon"
+              src="/assets/map/fire-nation.png"
+              alt="Fire Icon ASSOCIATE TO TEAM"
+            />
+          </a>
+          <a
+            class="map-icon-container"
+            id="air-icon"
+            href="/pages/air/air.html"
+          >
+            <img
+              class="map-icon"
+              src="/assets/map/air-nation.png"
+              alt="Air Icon ASSOCIATE TO TEAM"
+            />
+          </a>
+          <a
+            class="map-icon-container"
+            id="earth-icon"
+            href="/pages/earth/earth.html"
+          >
+            <img
+              class="map-icon"
+              src="/assets/map/earth-nation.png"
+              alt="Earth Icon ASSOCIATE TO TEAM"
+            />
+          </a>
+          <!-- // -->
 
-            <!-- Islands in the center -->
+          <!-- Islands in the center -->
 
-            <!-- Air Islands -->
-            <a class="map-island-container" id="air-island-lt" href="/pages/air/air.html">
-                <img class="map-island air-island" id="air-island-lt-img" src="/assets/map/air-nation-island-lt.png" alt="Water Island top left ASSOCIATE TO TEAM">
-            </a>
-            <a class="map-island-container" id="air-island-br" href="/pages/air/air.html">
-                <img class="map-island air-island" id="air-island-br-img" src="/assets/map/air-nation-island-br.png" alt="Water Island bottom right ASSOCIATE TO TEAM">
-            </a>
-            <a class="map-island-container" id="air-island-bl" href="/pages/air/air.html">
-                <img class="map-island air-island" id="air-island-bl-img" src="/assets/map/air-nation-island-bl.png" alt="Water Island bottom left ASSOCIATE TO TEAM">
-            </a>
-            <!-- // -->
-            <a class="map-island-container" id="fire-island" href="/pages/fire/fire.html">
-                <img class="map-island" id="fire-island-img" src="/assets/map/fire-nation-island.png" alt="Fire Islands ASSOCIATE TO TEAM">
-            </a>
-            <!-- Water islands -->
-            <a class="map-island-container" id="water-island-top" href="/pages/water/water.html">
-                <img class="map-island" id="water-island-img-top" src="/assets/map/water-nation-island-top.png" alt="Air Islands Top ASSOCIATE TO TEAM">
-            </a>
-            <a class="map-island-container" id="water-island-bottom" href="/pages/water/water.html">
-                <img class="map-island" id="water-island-img-bottom" src="/assets/map/water-nation-island-bottom.png" alt="Air Islands Bottom ASSOCIATE TO TEAM">
-            </a>
-            <!-- // -->
-            <a class="map-island-container" id="earth-island" href="/pages/earth/earth.html">
-                <img class="map-island" id="earth-island-img" src="/assets/map/earth-nation-island.png" alt="Earth Islands ASSOCIATE TO TEAM">
-            </a>
-            <!-- // -->
-           </div>
+          <!-- Air Islands -->
+          <a
+            class="map-island-container"
+            id="air-island-lt"
+            href="/pages/air/air.html"
+          >
+            <img
+              class="map-island air-island"
+              id="air-island-lt-img"
+              src="/assets/map/air-nation-island-lt.png"
+              alt="Water Island top left ASSOCIATE TO TEAM"
+            />
+          </a>
+          <a
+            class="map-island-container"
+            id="air-island-br"
+            href="/pages/air/air.html"
+          >
+            <img
+              class="map-island air-island"
+              id="air-island-br-img"
+              src="/assets/map/air-nation-island-br.png"
+              alt="Water Island bottom right ASSOCIATE TO TEAM"
+            />
+          </a>
+          <a
+            class="map-island-container"
+            id="air-island-bl"
+            href="/pages/air/air.html"
+          >
+            <img
+              class="map-island air-island"
+              id="air-island-bl-img"
+              src="/assets/map/air-nation-island-bl.png"
+              alt="Water Island bottom left ASSOCIATE TO TEAM"
+            />
+          </a>
+          <!-- // -->
+          <a
+            class="map-island-container"
+            id="fire-island"
+            href="/pages/fire/fire.html"
+          >
+            <img
+              class="map-island"
+              id="fire-island-img"
+              src="/assets/map/fire-nation-island.png"
+              alt="Fire Islands ASSOCIATE TO TEAM"
+            />
+          </a>
+          <!-- Water islands -->
+          <a
+            class="map-island-container"
+            id="water-island-top"
+            href="/pages/water/water.html"
+          >
+            <img
+              class="map-island"
+              id="water-island-img-top"
+              src="/assets/map/water-nation-island-top.png"
+              alt="Air Islands Top ASSOCIATE TO TEAM"
+            />
+          </a>
+          <a
+            class="map-island-container"
+            id="water-island-bottom"
+            href="/pages/water/water.html"
+          >
+            <img
+              class="map-island"
+              id="water-island-img-bottom"
+              src="/assets/map/water-nation-island-bottom.png"
+              alt="Air Islands Bottom ASSOCIATE TO TEAM"
+            />
+          </a>
+          <!-- // -->
+          <a
+            class="map-island-container"
+            id="earth-island"
+            href="/pages/earth/earth.html"
+          >
+            <img
+              class="map-island"
+              id="earth-island-img"
+              src="/assets/map/earth-nation-island.png"
+              alt="Earth Islands ASSOCIATE TO TEAM"
+            />
+          </a>
+          <!-- // -->
         </div>
+      </div>
 
-       <a href="/pages/LHA/LHA.html">
-            <img src="/assets/LHA/laurenhilll_sr_logo.png" alt="LHA Logo" srcset="">
-       </a>
-       <a href="/pages/CRC/CRC.html">
-            <img src="/assets/CRC/CrcLogo-Long-BlackText_Small_no_robot1.png" alt="CRC Logo" srcset="">
-       </a>
+      <a href="/pages/LHA/LHA.html">
+        <img
+          src="/assets/LHA/laurenhilll_sr_logo.png"
+          alt="LHA Logo"
+          srcset=""
+        />
+      </a>
+      <a href="/pages/CRC/CRC.html">
+        <img
+          src="/assets/CRC/CrcLogo-Long-BlackText_Small_no_robot1.png"
+          alt="CRC Logo"
+          srcset=""
+        />
+      </a>
     </main>
-    <!-- Avatar Progress -->
-    <div id="avatar-progress">
-        <img class="avatar-progress-icon" id="avatar-prog-water-icon" src="/assets/map/water-nation.png" alt="Avatar Progress Water Icon">
-
-        <img class="avatar-progress-icon" id="avatar-prog-fire-icon" src="/assets/map/fire-nation.png" alt=" Avatar Progress Fire Icon">
-
-        <img class="avatar-progress-icon" id="avatar-prog-air-icon" src="/assets/map/air-nation.png" alt="Avatar Progress Air Icon">
-        
-        <img class="avatar-progress-icon" id="avatar-prog-earth-icon" src="/assets/map/earth-nation.png" alt="Avatar Progress Earth Icon">
-
-        <img class="avatar-progress-icon" id="avatar-prog-avatar-icon" src="https://placehold.co/600x400/EEE/31343C" alt="Avatar Progress Avater Icon">
-    </div>
-
-    <div id="translation-container">
-        <a href="/">
-            <img id="translation-home-img" src="/assets/LHA/LHA Avatar small.webp" alt="Home">
-        </a>
-        <button type="button" onclick="setLang('fr')" id="language-button-fr" class="language-button">FR</button>
-        <button type="button" onclick="setLang('en')" id="language-button-en" class="language-button" style="display: none;">EN</button>
-    </div>
   </body>
-  <!-- Put locale at the bottom so its checker runs after the dom is loaded -->
-  <script src="/locale.js"></script>
 </html>

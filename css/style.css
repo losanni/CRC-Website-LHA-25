@@ -1,0 +1,12 @@
+@import url('/css/avatar-translation.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scrollbar-width: none;
+  font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+}

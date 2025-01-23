@@ -5,44 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Water</title>
     <link rel="stylesheet" href="water.css" />
-    <link rel="stylesheet" href="/avatar-translation.css">
-    <script defer src="/main.js"></script>
-    <script defer src="/avatar.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/element.css" />
+    <script defer type="module" src="/js/main.js"></script>
   </head>
   <body>
+    <nav>
+      <h1>Water</h1>
+      <a href="#journal">Journal</a>
+      <a href="#roster">Roster</a>
+    </nav>
+
     <main>
+      <!-- Journal -->
+      <section id="journal">
+        <h1>Journal</h1>
+      </section>
 
-      <profile-card
-      name="Joey Morin"
-      info="Prelim & Website"
-      grade="3"
-      avatar="https://lh3.googleusercontent.com/ogw/AF2bZyiq1iGYYiAiDJZhy7ahOZrho_9zHTOUFazc3TenNGhzx-g=s100-c-mo"
-    />
+      <!-- Roster -->
+      <section id="roster">
+        <h1>Roster</h1>
 
-
+        <div class="roster-grid">
+          <profile-card
+            name="Joey Morin"
+            info="Prelim & Website"
+            grade="Sec 3"
+            avatar="https://lh3.googleusercontent.com/ogw/AF2bZyiq1iGYYiAiDJZhy7ahOZrho_9zHTOUFazc3TenNGhzx-g=s100-c-mo"
+          />
+        </div>
+      </section>
     </main>
-    <!-- Avatar Progress -->
-    <div id="avatar-progress">
-        <img class="avatar-progress-icon" id="avatar-prog-water-icon" src="/assets/map/water-nation.png" alt="Avatar Progress Water Icon">
-
-        <img class="avatar-progress-icon" id="avatar-prog-fire-icon" src="/assets/map/fire-nation.png" alt=" Avatar Progress Fire Icon">
-
-        <img class="avatar-progress-icon" id="avatar-prog-air-icon" src="/assets/map/air-nation.png" alt="Avatar Progress Air Icon">
-        
-        <img class="avatar-progress-icon" id="avatar-prog-earth-icon" src="/assets/map/earth-nation.png" alt="Avatar Progress Earth Icon">
-
-        <img class="avatar-progress-icon" id="avatar-prog-avatar-icon" src="https://placehold.co/600x400/EEE/31343C" alt="Avatar Progress Avater Icon">
-    </div>
-
-    <div id="translation-container">
-        <a href="/">
-            <img id="translation-home-img" src="/assets/LHA/LHA Avatar small.webp" alt="Home">
-        </a>
-        <button type="button" onclick="setLang('fr')" id="language-button-fr" class="language-button">FR</button>
-        <button type="button" onclick="setLang('en')" id="language-button-en" class="language-button" style="display: none;">EN</button>
-    </div>
   </body>
-  <!-- Put locale at the bottom so its checker runs after the dom is loaded -->
-  <script src="/locale.js"></script>
-  <script src="/pages/Cards.js"></script>
 </html>
