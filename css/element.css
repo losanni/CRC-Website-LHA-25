@@ -1,43 +1,27 @@
-body {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-
-nav {
-  position: fixed;
-  top: 50%;
-  right: 0;
-
-  margin: 10px;
-  background: #e1b790;
-  padding: 1rem;
-  border-radius: 5%;
-
-  z-index: 100;
-  justify-content: space-between;
-  align-items: center;
-
-  color: white;
-  text-align: center;
-  transform: translateY(-50%);
-}
-
 section {
   padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  color: var(--primary-color);
+  border: var(--primary-color) 0.5rem solid;
+  height: 100%;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  font-size: 2rem;
+#journal {
+  line-height: 2;
 }
 
-nav h1 {
-  text-decoration: none;
-  color: white;
-  display: block;
+main {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  min-height: 100vh;
+  padding: 4rem;
+  gap: 2rem;
+}
+
+h1 {
   font-size: 3rem;
+  text-decoration: underline;
 }
 
 .roster-grid {

@@ -3,22 +3,32 @@ template.innerHTML = `
   <style>
     .profile-card {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      width: 20rem;
-      height: 5rem;
+      width: 10rem;
       padding: 2rem;
       border-radius: 2rem;
-      border: 0.5rem solid;
+      border: 0.3rem solid;
       color: var(--primary-color);
       border-color: var(--primary-color);
     }
 
     .profile-card img {
       border-radius: 50%;
+      width: 80%;
     }
 
-    .profile-card span {
+    .profile-card h3 {
+      text-align: center;
+    }
+
+    .profile-card p {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bold {
       font-weight: bold;
     }
   </style>
@@ -26,8 +36,8 @@ template.innerHTML = `
     <img />
     <div>
       <h3></h3>
-      <p id="grade"><span>Grade:</span></p>
-      <p id="info"><span>Task:</span></p>
+      <p><span class="bold">Level:</span><span id="level"></span></p>
+      <p><span class="bold">Role:</span><span id="role"></span></p>
     </div>
   </div>
 `
@@ -42,10 +52,9 @@ class ProfileCard extends HTMLElement {
     this.shadowRoot.appendChild(template.content.cloneNode(true))
     this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name')
     this.shadowRoot.querySelector('img').src = this.getAttribute('avatar')
-    this.shadowRoot.querySelector('p#info').innerText +=
-      ' ' + this.getAttribute('info')
-    this.shadowRoot.querySelector('p#grade').innerText +=
-      ' ' + this.getAttribute('grade')
+    this.shadowRoot.querySelector('#role').innerText = this.getAttribute('role')
+    this.shadowRoot.querySelector('#level').innerText =
+      this.getAttribute('level')
   }
 }
 
