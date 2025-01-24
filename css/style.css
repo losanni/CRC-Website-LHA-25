@@ -6,8 +6,23 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-color: hsl(29, 57%, 50%) #e1b790;
+  scrollbar-width: thin;
+}
+
 body {
-  scrollbar-width: none;
   font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
   background-color: #e1b790;
+}
+
+::-webkit-scrollbar {
+  background: #e1b790;
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(29, 57%, 50%);
+  border: #e1b790 0.5rem solid;
+  border-radius: 2rem;
 }
