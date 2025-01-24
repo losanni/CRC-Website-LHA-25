@@ -6,7 +6,6 @@ template.innerHTML = `
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      width: 10rem;
       padding: 2rem;
       border-radius: 2rem;
       border: 0.3rem solid;
@@ -16,7 +15,7 @@ template.innerHTML = `
 
     .profile-card img {
       border-radius: 50%;
-      width: 80%;
+      width: 100%;
     }
 
     .profile-card h3 {
@@ -26,6 +25,10 @@ template.innerHTML = `
     .profile-card p {
       display: flex;
       justify-content: space-between;
+    }
+
+    .profile-card div {
+      width: 100%;
     }
 
     .bold {
