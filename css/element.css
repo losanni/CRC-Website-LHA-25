@@ -13,7 +13,7 @@ section {
 
 main {
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 0.1fr;
   min-height: 100vh;
   padding: 4rem;
   gap: 2rem;

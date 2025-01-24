@@ -1,6 +1,8 @@
 #avatar-progress {
   /* Horzontal */
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
 
   /* Bottom right */
@@ -17,7 +19,7 @@
 
 .avatar-progress-icon {
   height: 7vh;
-  width: auto;
+  width: min-content;
   filter: grayscale(100%); /* Default to grey */
 }
 
