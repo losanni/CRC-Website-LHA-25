@@ -1,4 +1,4 @@
-// Add translation to DOM
+// Create translation elements
 
 const translationContainer = document.createElement('div')
 translationContainer.id = 'translation-container'
@@ -11,26 +11,19 @@ homeLinkImg.src = '/assets/LHA/LHA Avatar small.webp'
 homeLinkImg.id = 'translation-home-img'
 homeLinkImg.alt = 'Home'
 
-homeLink.appendChild(homeLinkImg)
-translationContainer.appendChild(homeLink)
-
 const languageButtonFr = document.createElement('button')
 languageButtonFr.classList.add('language-button')
 languageButtonFr.innerText = 'FR'
-languageButtonFr.addEventListener('click', () => setLang('fr'))
-
-translationContainer.appendChild(languageButtonFr)
 
 const languageButtonEn = document.createElement('button')
 languageButtonEn.classList.add('language-button')
 languageButtonEn.innerText = 'EN'
 languageButtonEn.style.display = 'none'
+
+languageButtonFr.addEventListener('click', () => setLang('fr'))
 languageButtonEn.addEventListener('click', () => setLang('en'))
 
-translationContainer.appendChild(languageButtonEn)
-document.body.appendChild(translationContainer)
-
-// Translation
+// Translation Logic
 
 // Checks if we have a language set from last time, if not default to user's browser
 let language = localStorage.getItem('lang') || navigator.language
@@ -118,3 +111,12 @@ function setLang(languageUserChose) {
 
   document.dispatchEvent(langChange)
 }
+
+// Add all elements to DOM when it is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  homeLink.appendChild(homeLinkImg)
+  translationContainer.appendChild(homeLink)
+  translationContainer.appendChild(languageButtonFr)
+  translationContainer.appendChild(languageButtonEn)
+  document.body.appendChild(translationContainer)
+})
