@@ -28,5 +28,5 @@ h1 {
   display: grid;
   padding: 1rem;
   margin-top: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
