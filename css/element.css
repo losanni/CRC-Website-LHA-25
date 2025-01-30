@@ -21,12 +21,13 @@ main {
 
 h1 {
   font-size: 3rem;
-  text-decoration: underline;
+  line-height: normal;
 }
 
 .roster-grid {
   display: grid;
   padding: 1rem;
   margin-top: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
 }

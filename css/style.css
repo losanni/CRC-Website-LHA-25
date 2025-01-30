@@ -1,4 +1,9 @@
-@import url('/css/avatar-translation.css');
+@import url("/css/avatar-translation.css");
+
+@font-face {
+  font-family: ATLA-font;
+  src: url("/assets/Avatar Airbender.ttf") format("truetype");
+}
 
 * {
   margin: 0;
@@ -12,7 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+  font-family: ATLA-font, sans-serif;
   background-color: #e1b790;
 }
 
