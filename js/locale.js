@@ -40,6 +40,10 @@ document.addEventListener('langChange', e => {
   // The json is a list of IDs of elements which contain text.
   // We did it manualy since we don't want to have containers included. When we run "innerText" on a container, it returns text of sub elements.
   // It then gets the element with the corresponding ids and changes its innerText.
+  // We also have a variable to see if its a journal page to change the sub heading
+
+
+  let jounrnalPage;
 
   if (
     navigator.language.includes('fr') ||
@@ -56,7 +60,27 @@ document.addEventListener('langChange', e => {
     // Fetch Docs: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     // Gets our translation from the json they're stored in with fetch
     async function getData() {
+
+      if (frTranslationsUrl.includes("fire" || "water" || "earth" || "air")) {
+              const response = await fetch("/pages/roster-fr.json")
+      
+              const frTranslationsAsObj = await response.json()
+              console.log(frTranslationsAsObj)
+      
+              // We save it as obj, so we consider it through keys,values
+      
+              const ids = Object.keys(frTranslationsAsObj)
+      
+              ids.forEach(key => {
+                console.log(key)
+                let elementToTR = document.getElementById(key)
+      
+                elementToTR.innerText = frTranslationsAsObj[key]
+              })
+      }
+
       const url = frTranslationsUrl
+
       try {
         const response = await fetch(url)
 
@@ -68,12 +92,13 @@ document.addEventListener('langChange', e => {
         const ids = Object.keys(frTranslationsAsObj)
 
         ids.forEach(key => {
+          console.log(key)
           let elementToTR = document.getElementById(key)
 
           elementToTR.innerText = frTranslationsAsObj[key]
         })
       } catch (error) {
-        console.error(error.message)
+        console.error(error.message);
       }
     }
 
