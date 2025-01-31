@@ -1,0 +1,19 @@
+{
+  "pre1": "Nous avons installé et testé notre robot de base avec les pièces de l'année dernière. Nous avons décidé d'adopter un style de mouvement « tank » de après les difficultés rencontrées avec le mouvement l'année dernière. De nouvelles roues en caoutchouc, plus adhérentes que les anciennes roues dures, ont également été ajoutées.",
+  "pre2": "En même temps, pour occuper l'équipe et introduire les nouveaux membres à l'équipement et leurs coéquipiers, on a fait du progrès sur un kart",
+  "nov1": "La construction débute sur le bras et les répliques de pièces de jeu.",
+  "nov2": "Cette année on a opté pour adopter des éléments VEX pour le bras",
+  "nov3": "Cette année on a opté pour adopter des éléments VEX pour le bras",
+  "nov4": "On a expérimenté avec des moteurs servo(que l'équipe de l'année dernière n'a pas pu utiliser 🫵).",
+  "nov5": "D'abord, nous avons fabriqué un petit bras à partir d'un tutoriel pour tester la faisabilité d'un bras.",
+  "nov6": "On a aussi modeler un autre concept en 3D (Adrian)",
+  "dec1": "La construction continue sur le bras.",
+  "dec2": "Pour lever/baisser le bras, on a utilisé un moteur de puissance (MODÈLE) avec une corde attachée du conduit au bras. Les évaluations préliminaires ont réussi, donc on a mis à rajouter des arêtes au coin de conduit pour créer ce qui est, plus ou moins, similaire à un treuil.",
+  "dec3": "On a fait des petits tests sur les moteurs du bras avec une source directe de 5V pour évaluer s' ils pouvaient supporter le poids. En gros, tout est réussi, il fallait seulement ajouter un deuxième moteur au centre.",
+  "bw1": "Termine la construction du bras.",
+  "bw2": "Créer un nouveau compartiment pour le robot ",
+  "ob1": "Nous avons vraiment retardé ce point, mais finalement, le circuit du robot a été ajusté pour répondre aux requis de cette année et aux nouveaux éléments.",
+  "ob2": "La lumière et l'Arduino ont été déplacés vers le C et la boîte à fusibles et tout autre vers le P. La boîte à fusibles est notre distribution électrique.",
+  "jan1": "Avec la construction complète, on a commencé le filage et la programmation du robot. On a branché les moteurs à deux fils 393 et 263 dans l'Arduino. Au début, on n'a pas pu contrôler les moteurs, ils étaient toujours alimentés. Le problème était qu' on a cru qu'ils agissaient comme des moteurs servos mais les moteurs à deux fils sont des moteurs, dont pour les contrôler on a mis les contrôleurs de moteurs Vex 29 comme intermédiaires. On avait plein qui trainaient que l'équipe précédente n'a pas utilisés. On a commencé à tester le bras, moteur par moteur. FIRST DAY BACK.",
+  "jan2": "On a commencé le câblage en enlevant les bouts des câbles à 3 fils qu'on avait. On s'est vite rendu compte que ça prenait beaucoup de temps et on détruisait tous nos câbles pour les connecter avec des capuchons de fil. Donc, on a adopté de plus longs câbles à 2 fils."
+}

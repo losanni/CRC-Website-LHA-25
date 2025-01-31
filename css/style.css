@@ -17,8 +17,13 @@ html {
 }
 
 body {
-  font-family: ATLA-font, sans-serif;
+  font-family: 'Comic Sans', 'Comic Sans MS', sans-serif;
   background-color: #e1b790;
+}
+
+h1,
+h2 {
+  font-family: ATLA-font, 'Comic Sans', 'Comic Sans MS', sans-serif;
 }
 
 ::-webkit-scrollbar {
