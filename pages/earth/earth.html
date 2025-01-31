@@ -16,36 +16,36 @@
         <h1 id="journal-title">Journal</h1>
 
         <h2 id="prekickoff">Pre-Kickoff</h2>
-        <li>
+        <li id="pre1">
           We started familiarizing the programmers with the programming part of
           the competition. For the beginners, we started teaching Python. With
           the more advanced, we showed them old CRC programming competition
           problems.
         </li>
-        <li>
+        <li id="pre2">
           For returning members, we discussed some new ideas for the website.
         </li>
         <h2 id="november">November</h2>
-        <li>Programmers got to work on Prelim 1 and 2</li>
-        <li>
+        <li id="nov1">Programmers got to work on Prelim 1 and 2</li>
+        <li id="nov2">
           We met with the media team ( website coders ) to discuss design ideas
         </li>
-        <li>Brainstormed control schemes for the robot arm</li>
-        <li>Discussion of lists and python</li>
-        <li>Teaching new members the basics of robotic coding</li>
+        <li id="nov3">Brainstormed control schemes for the robot arm</li>
+        <li id="nov4">Discussion of lists and python</li>
+        <li id="nov5">Teaching new members the basics of robotic coding</li>
         <h2 id="december">December</h2>
-        <li>We are working on prelim 3</li>
+        <li id="dec1">We are working on prelim 3</li>
         <h2 id="bw">Before Winter Break</h2>
-        <li>
+        <li id="bw1">
           We are finally starting to code / talk about the website more
           technically.
         </li>
         <h2 id="ob">Over Winter Break</h2>
-        <li>
+        <li id="ob1">
           We had made very minimal progress on the website to date, blame the
           captain 🙈, so we had to catch-up.
         </li>
-        <li>
+        <li id="ob2">
           Last year, we synchronized the website progress by using Github, and
           we’re doing that again this year. We again used it to keep code up to
           date across machines, but we wanted to take advantage of more of the
@@ -54,7 +54,7 @@
           the best way to organise progress on the website in one relevant
           place. SCREENSHOTS
         </li>
-        <li>
+        <li id="ob3">
           We made progress on the website. Starting with the map. The idea was
           to have a map as our primary navigation. We considered two options. A)
           Create a static image and overlay invisible links. Or B) Build it from
@@ -69,7 +69,7 @@
           that, we adjusted the Z-index to make it work properly and rebuilt the
           map with the correct background and edge. SCREENSHOT
         </li>
-        <li>
+        <li id="ob4">
           One of the core aspects of Avatar’s plot is Ang’s mastering of the
           elements. We wanted that somewhere on the website. Our interpretation
           was, as you visit the different teams’ pages, essentially mastering
@@ -79,27 +79,27 @@
           is by default grey, and becomes coloured when you master that element.
           SCREENSHOTS
         </li>
-        <li>
+        <li id="ob5">
           One fundamental thing to make sure worked before we started filling
           our website with content was the translation logic. We took
           inspiration from last year where the text content was stored in
           different json files. We then read it from there then applied it to
           the right element’s innerText. However, we made big changes.
           <ul>
-            <li>
+            <li id="ob6">
               We split the translation files based on the individual webpages,
               rather than having all content in one large json file. For
               example, we made a “CRC-Fr.json” instead of using a universal
               “fr.json”. This seemed more intuitive to us.
             </li>
-            <li>
+            <li id="ob7">
               We made the code universal, aka not hardcoding anything (in the
               sense of french translation), including the urls and the elements
               into the individual page’s scripts. The code reads the element ids
               from the json file and modifies accordingly. The same logic works
               for all webpages.
             </li>
-            <li>
+            <li id="ob8">
               We didn’t rewrite english translations, instead we opted to
               refresh the page, since the majority of content was in english to
               begin with. This has no effect on the visible content, the code
@@ -108,13 +108,13 @@
           </ul>
         </li>
         <h2 id="january">January</h2>
-        <li>
+        <li id="jan1">
           We created a top navigation bar that is present on all pages. It
           includes a link back to the home page, where all the navigation is,
           and the translation buttons, which change depending on your current
           language, showing you only the necessary one.
         </li>
-        <li>
+        <li id="jan2">
           We made adjustments to certain pages to make them more functional on
           mobile devices. In many cases, we made elements stack on top of each
           other instead of be placed next to each other
@@ -160,6 +160,10 @@
               role="Prelims & Blocs"
               level="Sec 4"
             />
+          </div>
+
+          <div>
+            <profile-card name="Rudra Patel" role="Beginner" level="Sec 4" />
           </div>
 
           <div>
