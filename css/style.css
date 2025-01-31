@@ -1,8 +1,8 @@
-@import url("/css/avatar-translation.css");
+@import url('/css/avatar-translation.css');
 
 @font-face {
   font-family: ATLA-font;
-  src: url("/assets/Avatar Airbender.ttf") format("truetype");
+  src: url('/assets/Avatar Airbender.ttf') format('truetype');
 }
 
 * {

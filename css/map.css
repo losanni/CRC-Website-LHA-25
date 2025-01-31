@@ -1,26 +1,20 @@
 #map-container {
-  position: relative;
-  width: 75vw; 
-  aspect-ratio: 1 / 1;
-  background: url('/assets/map/map-background.png') no-repeat center center;
-  background-size: contain;
-  overflow: hidden;
+  background: url('/assets/map/map-background.png');
+  background-size: 100vw 100vh;
 }
 
 /* Simialr code, just change png */
-.map { 
+.map {
   position: relative;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1 / 1;
-  background: url('assets/map/map-cloud-frame.png') no-repeat center center;
-  background-size: contain;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: url('/assets/map/map-cloud-frame.png');
+  background-size: 100vw 100vh;
 }
 
 .map-icon-container {
   position: absolute;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   transition: transform 0.3s ease;
   z-index: 6;
 }
@@ -32,11 +26,10 @@
 .map-icon {
   width: 15vw;
   height: auto;
-  border: 1px solid red; /* FOR DEGUB */
 }
 
 #fire-icon {
-  top: 70%; 
+  top: 70%;
   left: 15%;
 }
 
@@ -52,20 +45,19 @@
 
 #earth-icon {
   top: 27%;
-  left: 90%;
+  left: 87%;
 }
 
 /* Islands */
 /* Edit the 'img' to change the size */
 
 .map-island {
-  height: auto; 
-  border: 1px solid red; /* Debug  */
+  height: auto;
 }
 
 .map-island-container {
   position: absolute;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   transition: transform 0.3s ease;
 }
 
@@ -89,7 +81,7 @@
   z-index: 4;
 }
 
-#air-island-br-img{
+#air-island-br-img {
   width: 7.5vw;
 }
 
@@ -140,4 +132,14 @@
 
 #water-island-img-bottom {
   width: 20vw;
+}
+
+.links-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.links-container a img {
+  height: 10vh;
 }
