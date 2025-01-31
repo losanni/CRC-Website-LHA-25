@@ -29,18 +29,21 @@ document.body.innerHTML += `
     alt="Avatar Progress Earth Icon"
   />
 
-  <img
-    class="avatar-progress-icon"
-    id="avatar-prog-avatar-icon"
-    src="https://placehold.co/600x400/EEE/31343C"
-    alt="Avatar Progress Avater Icon"
-  />
+  
+  <a href="#" class="disabled-link" id="avatar-icon-link">
+    <img
+      class="avatar-progress-icon"
+      id="avatar-prog-avatar-icon"
+      src="https://placehold.co/600x400/EEE/31343C"
+      alt="Avatar Progress Avatar Icon"
+    />
+  </a>
 </div>
 `
 
 // Code for avatar progress
 
-const natureElements = ['fire', 'earth', 'water', 'air']
+const natureElements = ['fire', 'earth', 'water', 'air', 'avatar']
 
 // Create the elements
 natureElements.forEach(item => {
@@ -60,16 +63,29 @@ natureElements.forEach(item => {
   if (window.location.pathname.includes(item)) {
     sessionStorage.setItem(item, 'true') // re-asign to true
     console.log(`Visited ${item}`)
+
+     //  Ungrey, and grow if its first time
+      setInterval(() => {
+        const elementToUnlock = document.getElementById(`avatar-prog-${item}-icon`)
+        elementToUnlock.style.filter = 'grayscale(0%)';
+        elementToUnlock.style.transition = "transform 0.5s ease-in-out";
+        elementToUnlock.style.transform = "scale(1.25)";
+        
+          setTimeout(() => {
+              elementToUnlock.style.transform = "scale(1)";
+          }, 500);
+      }, (1500))
   }
 })
 
 natureElements.forEach(item => {
-  if (sessionStorage.getItem(item) === 'true') {
+  if (sessionStorage.getItem(item) === 'true' ) {
     console.log(`${item} element will be unlocked`)
 
-    const elementToUnlock = document.getElementById(`avatar-prog-${item}-icon`)
-    elementToUnlock.style.filter = 'grayscale(0%)'
-  }
+      const elementToUnlock = document.getElementById(`avatar-prog-${item}-icon`)
+      elementToUnlock.style.filter = 'grayscale(0%)'
+    
+    }
 })
 
 // We'll run one final check to see if all the elemts are unlocked, and thus 'unlock avatar status'
@@ -84,4 +100,8 @@ if (
 
   const avatarIcon = document.getElementById('avatar-prog-avatar-icon')
   avatarIcon.style.filter = 'grayscale(0%)'
+  
+  const avatarIconLink = document.getElementById("avatar-icon-link")
+  avatarIconLink.classList.remove("disabled-link");
+  avatarIconLink.href = "" //Link to videos
 }

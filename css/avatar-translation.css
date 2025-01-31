@@ -21,7 +21,17 @@
   height: 7vh;
   width: min-content;
   filter: grayscale(100%); /* Default to grey */
+
+  transition-duration: 0.4s;
 }
+
+/* This is for the avatar icon before it is unlocked */
+.disabled-link {
+  pointer-events: none;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
 
 /* Translation + home nav bar */
 
