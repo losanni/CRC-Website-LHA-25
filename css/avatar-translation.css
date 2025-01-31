@@ -1,9 +1,11 @@
 #avatar-progress {
-  /* Horzontal */
+  /* Vertical */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
+  height: auto;
 
   /* Bottom right */
   position: fixed;
@@ -16,13 +18,28 @@
 
   z-index: 100; /* Force on top */
 }
+ 
+/* On mobile move the avatar to top left */
+@media screen and (max-width: 768px) {
+  #avatar-progress {
+    /* Horizontal and less space */
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+    max-height: 10vh; 
+
+    top: 0;
+    left: 0;
+  }
+}
 
 .avatar-progress-icon {
+  max-height: 7vh;
   height: 7vh;
   width: auto;
   filter: grayscale(100%); /* Default to grey */
-
-  transition-duration: 0.4s;
+  object-fit: contain;
 }
 
 /* This is for the avatar icon before it is unlocked */
