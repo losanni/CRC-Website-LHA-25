@@ -22,10 +22,12 @@ template.innerHTML = `
 
     .profile-card h3 {
       text-align: center;
+      font-size: 2rem;
+      font-family: ATLA-font, "Comic Sans", "Comic Sans MS", sans-serif;
     }
 
     .profile-card p {
-      font-size: 1em;
+      font-size: 1rem;
       display: flex;
       justify-content: space-between;
     }

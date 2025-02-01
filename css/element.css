@@ -8,9 +8,7 @@ section {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  margin-right: 7vw;
 }
 
 /* Applies to roster and journal container */
@@ -24,36 +22,17 @@ section {
   height: 100%;
 }
 
-#top-container {
-  display: flex;
-
-  width: 100vw;
-  height: 100vh;
-  flex-direction: column;
+.top-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  place-items: center;
+  padding: 5rem;
+  margin-top: 10vh;
 }
 
-#top-img-container {
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#top-container img {
-  max-width: 100%;
-  width: 40em;
-}
-
-#top-p-container {
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+.top-container img {
+  width: 100%;
 }
 
 h1 {
@@ -70,30 +49,32 @@ h1 {
 }
 
 @media (width >= 40rem) {
-  #top-container {
-    flex-direction: row;
+  .top-container {
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
   }
 }
 
 @media (width >= 48rem) {
+  .top-container {
+    margin-top: 0;
+  }
+}
+
+@media (width >= 64rem) {
   .roster-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (width >= 66rem) {
+@media (width >= 80) {
   .roster-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media (width >= 86rem) {
+
+@media (width >= 96rem) {
   .roster-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media (width >= 104rem) {
-  .roster-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
