@@ -61,26 +61,6 @@ document.addEventListener('langChange', e => {
     // Gets our translation from the json they're stored in with fetch
     async function getData() {
 
-
-      // THis is for the basic titles(Janauary -> Janvier)
-      if (frTranslationsUrl.includes("fire" || "water" || "earth" || "air")) {
-              const response = await fetch("/pages/roster-fr.json")
-      
-              const frTranslationsAsObj = await response.json()
-              console.log(frTranslationsAsObj)
-      
-              // We save it as obj, so we consider it through keys,values
-      
-              const ids = Object.keys(frTranslationsAsObj)
-      
-              ids.forEach(key => {
-                console.log(key)
-                let elementToTR = document.getElementById(key)
-      
-                elementToTR.innerText = frTranslationsAsObj[key]
-              })
-      }
-
       const url = frTranslationsUrl
 
       try {
@@ -99,6 +79,29 @@ document.addEventListener('langChange', e => {
 
           elementToTR.innerText = frTranslationsAsObj[key]
         })
+
+        const regex = /fire|water|earth|air/; // Test for fire,water,earth,air
+
+        // THis is for the basic titles(Janauary -> Janvier)
+        if (regex.test(frTranslationsUrl)) {
+            console.log("changing")
+            const response = await fetch(`${window.location.origin}/pages/roster-fr.json`)
+
+            const frTranslationsAsObj = await response.json()
+            console.log(frTranslationsAsObj)
+
+            // We save it as obj, so we consider it through keys,values
+
+            const ids = Object.keys(frTranslationsAsObj)
+
+            ids.forEach(key => {
+              console.log(key)
+              let elementToTR = document.getElementById(key)
+
+              elementToTR.innerText = frTranslationsAsObj[key]
+            })
+        }
+
       } catch (error) {
         console.error(error.message);
       }
