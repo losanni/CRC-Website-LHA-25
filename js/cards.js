@@ -1,4 +1,4 @@
-const template = document.createElement('template')
+const template = document.createElement("template")
 template.innerHTML = `
   <style>
     .profile-card {
@@ -15,7 +15,7 @@ template.innerHTML = `
 
     .profile-card img {
       border-radius: 50%;
-      width: 240px;
+      width: 100%;
       aspect-ratio: 1 / 1;
       object-fit: cover;
     }
@@ -54,16 +54,16 @@ class ProfileCard extends HTMLElement {
 
     this.showInfo = true
 
-    this.attachShadow({ mode: 'open' })
+    this.attachShadow({ mode: "open" })
     this.shadowRoot.appendChild(template.content.cloneNode(true))
-    this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name')
-    this.shadowRoot.querySelector('img').src =
-      '/assets/Roster/' + this.getAttribute('name') + '.webp'
-    this.shadowRoot.querySelector('img').alt = this.getAttribute('name')
-    this.shadowRoot.querySelector('#role').innerText = this.getAttribute('role')
-    this.shadowRoot.querySelector('#level').innerText =
-      this.getAttribute('level')
+    this.shadowRoot.querySelector("h3").innerText = this.getAttribute("name")
+    this.shadowRoot.querySelector("img").src =
+      "/assets/Roster/" + this.getAttribute("name") + ".webp"
+    this.shadowRoot.querySelector("img").alt = this.getAttribute("name")
+    this.shadowRoot.querySelector("#role").innerText = this.getAttribute("role")
+    this.shadowRoot.querySelector("#level").innerText =
+      this.getAttribute("level")
   }
 }
 
-window.customElements.define('profile-card', ProfileCard)
+window.customElements.define("profile-card", ProfileCard)

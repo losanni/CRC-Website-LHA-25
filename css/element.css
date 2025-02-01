@@ -25,19 +25,11 @@ section {
 }
 
 #top-container {
-  order: -2;
-
   display: flex;
-  
 
   width: 100vw;
   height: 100vh;
-}
-
-@media screen and (max-width: 768px) {
-  #top-container {
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 
 #top-img-container {
@@ -50,7 +42,7 @@ section {
 }
 
 #top-container img {
-  max-width: 100%; 
+  max-width: 100%;
   width: 40em;
 }
 
@@ -64,14 +56,6 @@ section {
   padding: 2rem;
 }
 
-#roster {
-  order: -1; 
-}
-
-#journal {
-  order: 1; 
-}
-
 h1 {
   font-size: 3rem;
   line-height: normal;
@@ -79,13 +63,37 @@ h1 {
 
 .roster-grid {
   display: grid;
-  padding: 1rem;
+  padding: 2rem;
   margin-top: 1rem;
   gap: 1rem;
+  grid-template-columns: 1fr;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+@media (width >= 40rem) {
+  #top-container {
+    flex-direction: row;
+  }
+}
+
+@media (width >= 48rem) {
+  .roster-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width >= 66rem) {
+  .roster-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (width >= 86rem) {
+  .roster-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (width >= 104rem) {
+  .roster-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
