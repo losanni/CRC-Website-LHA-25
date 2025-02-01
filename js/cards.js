@@ -1,4 +1,4 @@
-const template = document.createElement("template")
+const template = document.createElement('template')
 template.innerHTML = `
   <style>
     .profile-card {
@@ -22,7 +22,7 @@ template.innerHTML = `
 
     .profile-card h3 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.9rem;
       font-family: ATLA-font, "Comic Sans", "Comic Sans MS", sans-serif;
     }
 
@@ -56,16 +56,16 @@ class ProfileCard extends HTMLElement {
 
     this.showInfo = true
 
-    this.attachShadow({ mode: "open" })
+    this.attachShadow({ mode: 'open' })
     this.shadowRoot.appendChild(template.content.cloneNode(true))
-    this.shadowRoot.querySelector("h3").innerText = this.getAttribute("name")
-    this.shadowRoot.querySelector("img").src =
-      "/assets/Roster/" + this.getAttribute("name") + ".webp"
-    this.shadowRoot.querySelector("img").alt = this.getAttribute("name")
-    this.shadowRoot.querySelector("#role").innerText = this.getAttribute("role")
-    this.shadowRoot.querySelector("#level").innerText =
-      this.getAttribute("level")
+    this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name')
+    this.shadowRoot.querySelector('img').src =
+      '/assets/Roster/' + this.getAttribute('name') + '.webp'
+    this.shadowRoot.querySelector('img').alt = this.getAttribute('name')
+    this.shadowRoot.querySelector('#role').innerText = this.getAttribute('role')
+    this.shadowRoot.querySelector('#level').innerText =
+      this.getAttribute('level')
   }
 }
 
-window.customElements.define("profile-card", ProfileCard)
+window.customElements.define('profile-card', ProfileCard)
