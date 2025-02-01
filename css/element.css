@@ -41,7 +41,7 @@ section {
 }
 
 #top-img-container {
-  width: 50vw;
+  width: 100vw;
   height: 100vh;
 
   display: flex;
@@ -55,7 +55,7 @@ section {
 }
 
 #top-p-container {
-  width: 50vw;
+  width: 100vw;
   height: 100vh;
 
   display: flex;
