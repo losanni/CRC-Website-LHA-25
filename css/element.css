@@ -7,16 +7,69 @@ section {
   height: 100%;
 }
 
-#journal {
-  line-height: 2;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 2fr 0.1fr;
-  min-height: 100vh;
-  padding: 4rem;
-  gap: 2rem;
+/* Applies to roster and journal container */
+section {
+  margin: 1em;
+  padding: 1.5rem;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  color: var(--primary-color);
+  border: var(--primary-color) 0.5rem solid;
+  height: 100%;
+}
+
+#top-container {
+  order: -2;
+
+  display: flex;
+  
+
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  #top-container {
+    flex-direction: column;
+  }
+}
+
+#top-img-container {
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#top-container img {
+  max-width: 100%; 
+  width: 40em;
+}
+
+#top-p-container {
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#roster {
+  order: -1; 
+}
+
+#journal {
+  order: 1; 
 }
 
 h1 {
@@ -29,5 +82,10 @@ h1 {
   padding: 1rem;
   margin-top: 1rem;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }

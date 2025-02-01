@@ -15,7 +15,7 @@ template.innerHTML = `
 
     .profile-card img {
       border-radius: 50%;
-      width: 100%;
+      width: 240px;
       aspect-ratio: 1 / 1;
       object-fit: cover;
     }
@@ -25,6 +25,7 @@ template.innerHTML = `
     }
 
     .profile-card p {
+      font-size: 1em;
       display: flex;
       justify-content: space-between;
     }

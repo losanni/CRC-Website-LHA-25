@@ -61,6 +61,8 @@ document.addEventListener('langChange', e => {
     // Gets our translation from the json they're stored in with fetch
     async function getData() {
 
+
+      // THis is for the basic titles(Janauary -> Janvier)
       if (frTranslationsUrl.includes("fire" || "water" || "earth" || "air")) {
               const response = await fetch("/pages/roster-fr.json")
       
