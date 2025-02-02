@@ -48,6 +48,29 @@ h1 {
   grid-template-columns: 1fr;
 }
 
+li {
+  margin-left: 1rem;
+}
+
+#journal {
+  position: relative;
+}
+
+.journal-img {
+  padding: 1rem;
+  transition: scale 500ms ease;
+}
+
+.journal-img:hover {
+  scale: 105%;
+}
+
+.journal-img img {
+  border-radius: 1rem;
+  width: 100%;
+  box-shadow: 0 0 1rem color-mix(in srgb, var(--primary-color) 80%, transparent);
+}
+
 @media (width >= 40rem) {
   .top-container {
     grid-template-columns: 1fr 2fr;
@@ -65,11 +88,31 @@ h1 {
   .roster-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  li {
+    max-width: 60%;
+  }
+
+  .journal-img {
+    position: absolute;
+    width: 35%;
+    right: 2rem;
+  }
 }
 
-@media (width >= 80) {
+@media (width >= 80rem) {
   .roster-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  li {
+    max-width: 45%;
+  }
+
+  .journal-img {
+    position: absolute;
+    width: 50%;
+    right: 2rem;
   }
 }
 

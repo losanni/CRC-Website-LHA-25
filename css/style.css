@@ -1,8 +1,12 @@
 @import url('/css/avatar-translation.css');
 
 @font-face {
-  font-family: ATLA-font;
+  font-family: 'ATLA-font';
   src: url('/assets/Avatar Airbender.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Papyrus';
+  src: url('/assets/papyrus.ttf') format('truetype');
 }
 
 * {
@@ -17,13 +21,13 @@ html {
 }
 
 body {
-  font-family: 'Comic Sans', 'Comic Sans MS', sans-serif;
+  font-family: 'Papyrus', 'Comic Sans MS', sans-serif;
   background-color: #e1b790;
 }
 
 h1,
 h2 {
-  font-family: ATLA-font, 'Comic Sans', 'Comic Sans MS', sans-serif;
+  font-family: 'ATLA-font', 'Papyrus', 'Comic Sans MS', sans-serif;
 }
 
 ::-webkit-scrollbar {
