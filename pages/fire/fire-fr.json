@@ -14,6 +14,7 @@
   "bw1": "Termine la construction du bras.",
   "bw2": "Créer un nouveau compartiment pour le robot ",
   "ob1": "Nous avons vraiment retardé ce point, mais finalement, le circuit du robot a été ajusté pour répondre aux requis de cette année et aux nouveaux éléments.",
+  "ob3": "Pendant les vacances, nous avons commencé à travailler sur un autre concept de bras. Celui-ci est plus proche d'un élévateur avec une griffe.",
   "ob2": "La lumière et l'Arduino ont été déplacés vers le C et la boîte à fusibles et tout autre vers le P. La boîte à fusibles est notre distribution électrique.",
   "jan1": "Avec la construction complète, on a commencé le filage et la programmation du robot. On a branché les moteurs à deux fils 393 et 263 dans l'Arduino. Au début, on n'a pas pu contrôler les moteurs, ils étaient toujours alimentés. Le problème était qu' on a cru qu'ils agissaient comme des moteurs servos mais les moteurs à deux fils sont des moteurs, dont pour les contrôler on a mis les contrôleurs de moteurs Vex 29 comme intermédiaires. On avait plein qui trainaient que l'équipe précédente n'a pas utilisés. On a commencé à tester le bras, moteur par moteur. FIRST DAY BACK.",
   "jan2": "On a commencé le câblage en enlevant les bouts des câbles à 3 fils qu'on avait. On s'est vite rendu compte que ça prenait beaucoup de temps et on détruisait tous nos câbles pour les connecter avec des capuchons de fil. Donc, on a adopté de plus longs câbles à 2 fils."

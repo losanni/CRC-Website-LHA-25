@@ -10,7 +10,7 @@ section {
 }
 
 main {
-  margin-right: 7vw;
+  margin-right: 7vw; /* gives room for header + avtar to render on journal pages */
 }
 
 .top-container {
@@ -37,6 +37,8 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .roster-grid {
@@ -50,20 +52,40 @@ h2 {
 li {
   margin-left: 1rem;
   overflow: visible;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #journal {
   position: relative;
 }
 
+/*
+.journal-img {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.journal-img img {
+  border: var(--primary-color) 0.25rem solid;
+  border-radius: 5%;
+  max-width: 100%;
+  max-height: 50vh;
+  height: auto;
+  display: block;
+}
+
+*/
 .journal-img {
   margin: 1rem -1.5rem;
   width: calc(100% + 3rem);
-}
-
-ul {
-  display: block !important;
 }
 
 .journal-img img {
