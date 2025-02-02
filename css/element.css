@@ -1,16 +1,12 @@
 /* Applies to roster and journal container */
 section {
-  margin: 1rem;
+  margin: 3rem;
   padding: 1.5rem;
   background-color: var(--secondary-color);
   border-radius: 1.25rem;
   color: var(--primary-color);
   border: var(--primary-color) 0.5rem solid;
   height: 100%;
-}
-
-main {
-  margin-right: 7vw; /* gives room for header + avtar to render on journal pages */
 }
 
 .top-container {
@@ -92,6 +88,17 @@ li {
   aspect-ratio: 3/1;
   object-fit: cover;
   width: 100%;
+}
+
+.journal-img.small {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.journal-img.small img {
+  aspect-ratio: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 5rem color-mix(in srgb, var(--primary-color) 80%, transparent);
 }
 
 @media (width >= 40rem) {

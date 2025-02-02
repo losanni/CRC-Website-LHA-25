@@ -1,3 +1,5 @@
+const language = localStorage.getItem('lang') || navigator.language
+
 const template = document.createElement('template')
 template.innerHTML = `
   <style>
@@ -22,7 +24,7 @@ template.innerHTML = `
 
     .profile-card h3 {
       text-align: center;
-      font-size: 1.9rem;
+      font-size: 1.5rem;
       font-family: ATLA-font, "Comic Sans", "Comic Sans MS", sans-serif;
     }
 
@@ -62,15 +64,27 @@ class ProfileCard extends HTMLElement {
     this.shadowRoot.querySelector('img').src =
       '/assets/Roster/' + this.getAttribute('name') + '.webp'
     this.shadowRoot.querySelector('img').alt = this.getAttribute('name')
-    this.shadowRoot.querySelector('#role').innerText = this.getAttribute('role')
+    this.shadowRoot.querySelector('#role').innerText =
+      language === 'fr'
+        ? this.getAttribute('role-fr')
+        : this.getAttribute('role')
     this.shadowRoot.querySelector('#level').innerText =
-      this.getAttribute('level')
+      language === 'fr'
+        ? this.getAttribute('level')
+            .replace('Sec', 'Secondaire')
+            .replace('Teacher', 'Enseignante')
+        : this.getAttribute('level')
   }
 }
 
 window.customElements.define('profile-card', ProfileCard)
 
 document.querySelectorAll('#journal img[data-pos-y]').forEach((image) => {
-  console.log(image)
   image.style.objectPosition = '0 ' + image.getAttribute('data-pos-y')
 })
+
+document
+  .querySelectorAll('#journal img[data-aspect-ratio]')
+  .forEach((image) => {
+    image.style.aspectRatio = image.getAttribute('data-aspect-ratio')
+  })
