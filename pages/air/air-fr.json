@@ -17,5 +17,7 @@
   "jan4": "Création de l'art de la vidéo",
   "jan5": "Nous avons terminé l'enregistrement de toutes les scènes de la vidéo",
   "jan6": "Ajout de bloopers (l'Axolotl",
-  "jan7": "Aidé l'équipe de programmation avec le journale"
+  "jan7": "Aidé l'équipe de programmation avec le journale",
+  "tutorial": "Tutoriel",
+  "tut-desc":"En janvier, nous avons commencé à réaliser le tutoriel. Nous avons décidé de faire un tutoriel sur les servo-moteurs parce que nous ne savions pas comment les utiliser au début.  Tout le monde les utilisait, mais nous ne savions pas comment les faire fonctionner. Nous avons appris la plupart de nos connaissances par essais et erreurs, en consultant le WIKI et des vidéos aléatoires en ligne. La dernière partie du tutoriel, où la majorite du codage a eu lieu, a été inspirée par un YouTuber nommé FireShip.IO. Ses vidéos de programmation ont un style unique que nous voulions reproduire. https://youtu.be/N6-Q2dgodLs?feature=shared&t=452"
 }
