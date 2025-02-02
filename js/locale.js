@@ -95,8 +95,9 @@ document.addEventListener('langChange', e => {
             const ids = Object.keys(frTranslationsAsObj)
 
             ids.forEach(key => {
-              console.log(key)
               let elementToTR = document.getElementById(key)
+
+              console.log(elementToTR)
 
               elementToTR.innerText = frTranslationsAsObj[key]
             })

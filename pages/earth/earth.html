@@ -157,33 +157,26 @@
           SCREENSHOTS
         </li>
         <li id="ob5">
-          One fundamental thing to make sure worked before we started filling
-          our website with content was the translation logic. We took
-          inspiration from last year where the text content was stored in
-          different json files. We then read it from there then applied it to
-          the right element’s innerText. However, we made big changes.
-          <ul>
-            <li id="ob6">
-              We split the translation files based on the individual webpages,
-              rather than having all content in one large json file. For
-              example, we made a “CRC-Fr.json” instead of using a universal
-              “fr.json”. This seemed more intuitive to us.
-            </li>
-            <li id="ob7">
-              We made the code universal, aka not hardcoding anything (in the
-              sense of french translation), including the urls and the elements
-              into the individual page’s scripts. The code reads the element ids
-              from the json file and modifies accordingly. The same logic works
-              for all webpages.
-            </li>
-            <li id="ob8">
-              We didn’t rewrite english translations, instead we opted to
-              refresh the page, since the majority of content was in english to
-              begin with. This has no effect on the visible content, the code
-              detects the language and changes it
-            </li>
-          </ul>
+          One fundamental thing to make sure worked before we started filling our website with content was the translation logic. 
+          We took inspiration from last year where the text content was stored in different JSON files. We then read it from there 
+          and applied it to the right element’s `innerText`. However, we made big changes.
+
+                    <li id="ob6">
+                      We split the translation files based on the individual webpages rather than having all content in one large JSON file. 
+                      For example, we made a `CRC-Fr.json` instead of using a universal `fr.json`. This seemed more intuitive to us.
+                    </li>
+                    <li id="ob7">
+                      We made the code universal, aka not hardcoding anything (in the sense of French translation), including the URLs 
+                      and the elements into the individual page’s scripts. The code reads the element IDs from the JSON file and modifies 
+                      them accordingly. The same logic works for all webpages.
+                    </li>
+                    <li id="ob8">
+                      We didn’t rewrite English translations; instead, we opted to refresh the page since the majority of content was 
+                      in English to begin with. This has no effect on the visible content; the code detects the language and changes it.
+                    </li>
+                  
         </li>
+
         <h2 id="january">January</h2>
         <li id="jan1">
           We created a top navigation bar that is present on all pages. It
