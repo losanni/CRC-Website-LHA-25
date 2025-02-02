@@ -1,179 +1,186 @@
 * {
-    scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 /* Essentially you scroll and they fade in/out to give the illusion that the 'text changes' */
 /* Since the background colour doesn't change, it's an optical illusion. */
 /* in reality you scroll over the page and the elements */
- 
-#avatar-intro-bg {
-    height: 100vh; 
-    
-     /* Colour code generated on: https://cssgradient.io/ */
-    background: radial-gradient(circle, rgba(146,28,19,1) 0%, rgba(33,2,3,1) 100%);
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-y: auto;  /* Makes content inside scrollable to replicate effect we want */
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y */
+#avatar-intro-bg {
+  height: 100vh;
+
+  /* Colour code generated on: https://cssgradient.io/ */
+  background: radial-gradient(
+    circle,
+    rgba(146, 28, 19, 1) 0%,
+    rgba(33, 2, 3, 1) 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: auto; /* Makes content inside scrollable to replicate effect we want */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y */
 }
 
 .element-container {
-    display: flex;
-    border: 3px solid yellow;
-    height: 100vh;  /* Each element container takes the most space it can */
+  display: flex;
+  border: 0.1875rem solid yellow;
+  height: 100vh; /* Each element container takes the most space it can */
 
-    /* for now since we have the text only, REMEMBER ALL THE ELEMENTS ARE CENTRED */
-    justify-content: center;
-    align-items: center;
+  /* for now since we have the text only, REMEMBER ALL THE ELEMENTS ARE CENTRED */
+  justify-content: center;
+  align-items: center;
 }
 
 /* default, hide it */
 .fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 /* We can just fade in on hover since it's the same as saying it's 'focused' */
 .fade-in:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
-    #avatar-intro-bg {
-        height: auto; 
-        background-size: contain;
-        overflow-y: auto;
-    }
+@media (width < 48rem) {
+  #avatar-intro-bg {
+    height: auto;
+    background-size: contain;
+    overflow-y: auto;
+  }
 
-    /* Stack elements vertically */
-    .element-container {
-        flex-direction: column;
-    }
+  /* Stack elements vertically */
+  .element-container {
+    flex-direction: column;
+  }
 
-    /* Ignore fade animation */
-    .fade-in {
-        opacity: 1;
-    }
+  /* Ignore fade animation */
+  .fade-in {
+    opacity: 1;
+  }
 }
 
 .element-text-big {
-    color: rgb(140, 122, 100); /* Stole the colour from the intro */
+  color: rgb(140, 122, 100); /* Stole the colour from the intro */
 
-    font-size: clamp(5em, 15vw, 30em); /* Trick so font resizes based on screen size */
-    text-align: center;
+  font-size: clamp(
+    5em,
+    15vw,
+    30em
+  ); /* Trick so font resizes based on screen size */
+  text-align: center;
 }
 
 /* This is the frist paragraph. 50/50 img and text */
 #crc-comp-gen {
-    padding-top: 5vh;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+  padding-top: 5vh;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 #crc-text-container {
-    width: 50%;
-    font-size: xx-large;
+  width: 50%;
+  font-size: 2rem;
 }
 
 #crc-img-container {
-    padding: 0;
-    margin: 0;
-    width: 50%;
+  padding: 0;
+  margin: 0;
+  width: 50%;
 }
 
 #crc-img {
-    height: auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 /* Title in between */
 
 #multifaceted {
-    margin-top: 0;
-    padding-top: 0;
-    text-align: center;
-    margin-bottom: 7vh;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+  margin-bottom: 7vh;
 
-    font-size: clamp(3em, 4em, 5em);
+  font-size: clamp(3em, 4em, 5em);
 }
 
 /* This is the next section. Describes the parts */
 #crc-comp-parts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    /* So they don't scale off page */
-    margin-left: 1%;
-    margin-right: 1%;
+  /* So they don't scale off page */
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .horizontal-element {
-    margin: 10px;
-    border-radius: 5px;
-    border: blue solid 5px; /* debug */
-    width: 25%;
-    height: 80vh;
+  margin: 0.625rem;
+  border-radius: 0.3125rem;
+  border: blue solid 0.3125rem; /* debug */
+  width: 25%;
+  height: 80vh;
 
-    transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .horizontal-element-h2 {
-    text-align: center;
-    font-size: 2em;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .horizontal-element:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .horizontal-element-text {
-    text-align: center;
-    font-size: 1em;
-    height: 80%;
+  text-align: center;
+  font-size: 1rem;
+  height: 80%;
 }
 
 /* Mobile styles */
-@media screen and (max-width: 768px) {
-    
-    /* Change the flex to vertical on mobile since they're tighter */
-    .element-container,
-    #crc-comp-gen,
-    #crc-comp-parts {
-        flex-direction: column;
-    }
+@media (max-width < 48rem) {
+  /* Change the flex to vertical on mobile since they're tighter */
+  .element-container,
+  #crc-comp-gen,
+  #crc-comp-parts {
+    flex-direction: column;
+  }
 
-    #crc-text-container,
-    #crc-img-container {
-        width: 100%; /* Full width on mobile */
-        text-align: center; /* It looks better centered */
-        height: 100vh;
-    }
+  #crc-text-container,
+  #crc-img-container {
+    width: 100%; /* Full width on mobile */
+    text-align: center; /* It looks better centered */
+    height: 100vh;
+  }
 
-    #crc-comp-description {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
+  #crc-comp-description {
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
 
-    .horizontal-element {
-        width: 90%; 
-        height: auto;
-        margin: 20px 0;
-    }
+  .horizontal-element {
+    width: 90%;
+    height: auto;
+    margin: 1.25rem 0;
+  }
 
-    .horizontal-element-text {
-        height: auto;
-    }
-
+  .horizontal-element-text {
+    height: auto;
+  }
 }

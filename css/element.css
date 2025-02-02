@@ -1,9 +1,9 @@
 /* Applies to roster and journal container */
 section {
-  margin: 1em;
+  margin: 1rem;
   padding: 1.5rem;
   background-color: var(--secondary-color);
-  border-radius: 20px;
+  border-radius: 1.25rem;
   color: var(--primary-color);
   border: var(--primary-color) 0.5rem solid;
   height: 100%;
@@ -19,7 +19,7 @@ section {
 }
 
 #top-p-text {
- font-size: xx-large;
+  font-size: 2rem;
 }
 
 .top-container img {
