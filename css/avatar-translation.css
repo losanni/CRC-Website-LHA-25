@@ -1,35 +1,33 @@
 #avatar-progress {
-  max-height: 10vh;
-
   /* Vertical */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 0.3125rem;
+  gap: 0.625rem;
 
   height: auto;
 
   /* Bottom right */
   position: fixed;
+  bottom: 0;
+  right: 0;
 
   margin: 0.625rem;
   padding: 0.625rem;
-  border-radius: 5%;
-
-  z-index: 100; /* Force on top */
 }
 
 /* On mobile move the avatar to top left */
-@media (width >= 48rem) {
+@media (width < 768px) {
   #avatar-progress {
     /* Horizontal and less space */
-    flex-direction: column;
-    gap: 0.625rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3125rem;
 
-    max-height: auto;
+    max-height: 10vh;
 
-    bottom: 0;
-    right: 0;
+    top: 0;
+    left: 0;
   }
 }
 
