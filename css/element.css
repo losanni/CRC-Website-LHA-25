@@ -31,8 +31,12 @@ main {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   line-height: normal;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 .roster-grid {
@@ -46,6 +50,7 @@ h1 {
 li {
   margin-left: 1rem;
   overflow: visible;
+  font-size: 1.5rem;
 }
 
 #journal {
