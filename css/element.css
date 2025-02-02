@@ -9,6 +9,10 @@ section {
   height: 100%;
 }
 
+main {
+  margin-right: 7vw;
+}
+
 .top-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -46,18 +50,11 @@ li {
 
 #journal {
   position: relative;
-  max-height: none;
-  max-width: none;
-  overflow: auto;
 }
 
 .journal-img {
-  padding: 1rem;
-  transition: scale 500ms ease;
-}
-
-.journal-img:hover {
-  scale: 105%;
+  margin: 1rem -1.5rem;
+  width: calc(100% + 3rem);
 }
 
 ul {
@@ -65,9 +62,9 @@ ul {
 }
 
 .journal-img img {
-  border-radius: 1rem;
+  aspect-ratio: 3/1;
+  object-fit: cover;
   width: 100%;
-  box-shadow: 0 0 1rem color-mix(in srgb, var(--primary-color) 80%, transparent);
 }
 
 @media (width >= 40rem) {
@@ -88,30 +85,22 @@ ul {
     grid-template-columns: 1fr 1fr;
   }
 
-  li {
-    max-width: 60%;
+  /* li {
+    max-width: calc(65% - 3.5rem);
   }
 
   .journal-img {
     position: absolute;
-    width: 35%;
-    right: 2rem;
-  }
+    height: 100%;
+    max-width: 35%;
+    max-height: 40%;
+    right: 1.5rem;
+  } */
 }
 
 @media (width >= 80rem) {
   .roster-grid {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  li {
-    max-width: 45%;
-  }
-
-  .journal-img {
-    position: absolute;
-    width: 50%;
-    right: 2rem;
   }
 }
 
@@ -119,4 +108,12 @@ ul {
   .roster-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  /* li {
+    max-width: 45%;
+  }
+
+  .journal-img {
+    max-width: 50%;
+  } */
 }

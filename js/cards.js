@@ -69,3 +69,8 @@ class ProfileCard extends HTMLElement {
 }
 
 window.customElements.define('profile-card', ProfileCard)
+
+document.querySelectorAll('#journal img[data-pos-y]').forEach((image) => {
+  console.log(image)
+  image.style.objectPosition = '0 ' + image.getAttribute('data-pos-y')
+})
