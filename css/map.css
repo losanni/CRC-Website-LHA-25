@@ -10,6 +10,10 @@
   box-shadow: 0 0 5rem #8eaa87;
 }
 
+body {
+  background-color: #814d27;
+}
+
 main {
   position: relative;
 }
