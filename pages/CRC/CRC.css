@@ -10,6 +10,9 @@ body {
   height: 100%;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* Essentially you scroll and they fade in/out to give the illusion that the 'text changes' */
 /* Since the background colour doesn't change, it's an optical illusion. */
 /* in reality you scroll over the page and the elements */
@@ -33,7 +36,6 @@ body {
 
 .element-container {
   display: flex;
-  border: 0.1875rem solid yellow;
   height: 100vh; /* Each element container takes the most space it can */
 
   /* for now since we have the text only, REMEMBER ALL THE ELEMENTS ARE CENTRED */
@@ -128,14 +130,41 @@ body {
   margin-right: 1%;
 }
 
+#crc-comp-description {
+  padding: 20px;
+}
+
+#crc-comp-title {
+  padding: 20px;
+}
+
 .horizontal-element {
   margin: 0.625rem;
   border-radius: 0.3125rem;
   border: blue solid 0.3125rem; /* debug */
+  background-repeat: no-repeat;
   width: 25%;
-  height: 80vh;
+  height: 50vh;
 
   transition-duration: 0.5s;
+}
+
+.water {
+  background-image: url("../../assets/map/water-nation.png");
+  background-position: -5px, 40px;
+}
+
+.earth {
+  background-image: url("../../assets/map/earth-nation.png");
+  background-position: 5px, 30px;
+}
+
+.fire {
+  background-image: url("../../assets/map/fire-nation.png");
+}
+
+.air {
+  background-image: url("../../assets/map/air-nation.png");
 }
 
 .horizontal-element-h2 {
@@ -183,4 +212,48 @@ body {
   .horizontal-element-text {
     height: auto;
   }
+}
+
+#TakTik {
+  padding-top: 10vh;
+  font-size: 10em;
+  margin: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#taktik-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+
+#taktik-container img {
+  height: 100%;
+  width: 30vw;
+}
+
+#taktik-game-section {
+  height: 100vh;
+  text-align: center
+}
+
+.taktikText {
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.taktikImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.taktikImg {
+  max-height: 40vh;
+  max-width: 100%;
+  padding: 20px;
 }

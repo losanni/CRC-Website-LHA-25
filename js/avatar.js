@@ -1,33 +1,38 @@
 // Add avatar progress to HTML dynamically
 document.body.innerHTML += `
 <div id="avatar-progress">
-  <img
-    class="avatar-progress-icon"
-    id="avatar-prog-water-icon"
-    src="/assets/map/water-nation.png"
-    alt="Avatar Progress Water Icon"
-  />
-
-  <img
-    class="avatar-progress-icon"
-    id="avatar-prog-fire-icon"
-    src="/assets/map/fire-nation.png"
-    alt="Avatar Progress Fire Icon"
-  />
-
-  <img
-    class="avatar-progress-icon"
-    id="avatar-prog-air-icon"
-    src="/assets/map/air-nation.png"
-    alt="Avatar Progress Air Icon"
-  />
-
-  <img
-    class="avatar-progress-icon"
-    id="avatar-prog-earth-icon"
-    src="/assets/map/earth-nation.png"
-    alt="Avatar Progress Earth Icon"
-  />
+  <a href="/pages/water/water.html">
+    <img
+      class="avatar-progress-icon"
+      id="avatar-prog-water-icon"
+      src="/assets/map/water-nation.png"
+      alt="Avatar Progress Water Icon"
+    />
+  </a>
+  <a href="/pages/fire/fire.html">
+    <img
+      class="avatar-progress-icon"
+      id="avatar-prog-fire-icon"
+      src="/assets/map/fire-nation.png"
+      alt="Avatar Progress Fire Icon"
+    />
+  </a>
+  <a href="/pages/air/air.html">
+    <img
+      class="avatar-progress-icon"
+      id="avatar-prog-air-icon"
+      src="/assets/map/air-nation.png"
+      alt="Avatar Progress Air Icon"
+    />
+  </a>
+  <a href="/pages/earth/earth.html">
+    <img
+      class="avatar-progress-icon"
+      id="avatar-prog-earth-icon"
+      src="/assets/map/earth-nation.png"
+      alt="Avatar Progress Earth Icon"
+    />
+  </a>
 
   
   <a href="#" class="disabled-link" id="avatar-icon-link">
@@ -103,5 +108,5 @@ if (
   
   const avatarIconLink = document.getElementById("avatar-icon-link")
   avatarIconLink.classList.remove("disabled-link");
-  avatarIconLink.href = "" //Link to videos
+  avatarIconLink.href = "/pages/air/video.html" //Link to videos
 }

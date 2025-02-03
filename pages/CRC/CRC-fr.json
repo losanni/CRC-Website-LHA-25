@@ -5,5 +5,19 @@
     "big-air": "Vent",
     "crc-comp-title": "Robotique CRC",
     "crc-comp-description": "La compétition Robotique CRC est une compétition robotique annuelle. Cette année, elle réunit un total de 29 écoles, secondaires et cégeps, qui vont s'affronter et se défier pour construire le meilleur robot. ",
-    "multifaceted": "Diversifié"
+    "multifaceted": "Diversifié",
+    "media": "",
+    "kiosk": "",
+    "programming": "",
+    "robot": "",
+    "taktik1": "La compétition de cette année s'appelle TakTik. Elle aura lieu du 19 au 22 février 2025 au Centre de carrière St. Pius X, 9955 Av. Papineau, Montréal, QC H2B 1Z9.",
+    "taktik2": "Le jeu de cette année est une variation du classique Tic Tac Toe.",
+    "taktik3": "Deux équipes, bleue et jaune, de deux écoles s'affrontent pour obtenir le meilleur score. Les robots jouent sur un terrain de jeu organisé sous forme de grille de morpion.",
+    "taktik4": "Ils doivent ramasser des anneaux, appelés pièces de jeu, et les placer sur les quatre types de stations disposées autour du terrain de jeu.",
+    "taktik5": "Les pièces de jeu commencent dans des distributeurs, avec trois styles uniques.",
+    "taktik6": "Le poteau central est un peu différent. Vous ne pouvez pas l'atteindre directement, vous devrez lancer les pièces de jeu dedans. Ne vous inquiétez pas, si vous manquez, vous gagnerez quand même des points en fonction de la distance à laquelle elle est tombée.",
+    "taktik7": "Les robots les prennent des distributeurs ou du sol et les placent sur les stations. Chaque station a une limite, alors ne la dépassez pas.",
+    "taktik8": "Chaque pièce de jeu placée rapporte un certain nombre de points, mais les vrais points viennent du contrôle de la pièce de jeu. Pour contrôler un poteau de jeu, vous devez respecter les règles spécifiques de chaque poteau, alors lisez-les attentivement.",
+    "taktik9": "En contrôlant trois pièces de jeu alignées en ligne, façon morpion, votre score dans cette zone est multiplié.",
+    "taktik10": "Chaque partie dure 5 minutes et vous ne pouvez tenir que trois pièces de jeu à la fois. N'oubliez pas d'utiliser la bonne couleur CRCSignal. Amusez-vous bien !"
 }

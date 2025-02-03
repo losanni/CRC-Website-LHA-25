@@ -29,22 +29,22 @@
 }
 
 #fire-icon {
-  top: 70%;
+  top: 77%;
   left: 15%;
 }
 
 #water-icon {
-  top: 27%;
+  top: 22%;
   left: 13%;
 }
 
 #air-icon {
-  top: 70%;
+  top: 77%;
   left: 87%;
 }
 
 #earth-icon {
-  top: 27%;
+  top: 22%;
   left: 87%;
 }
 
@@ -66,7 +66,7 @@
 }
 
 #fire-island {
-  top: 47%;
+  top: 52%;
   left: 30%;
   z-index: 3;
 }
@@ -116,7 +116,7 @@
 }
 
 #water-island-top {
-  top: 25%;
+  top: 15%;
   left: 50%;
   z-index: 5;
 }
@@ -125,7 +125,7 @@
 }
 
 #water-island-bottom {
-  top: 75%;
+  top: 85%;
   left: 50%;
   z-index: 5;
 }
