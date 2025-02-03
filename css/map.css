@@ -1,22 +1,40 @@
 #map-container {
   background: url('/assets/map/map-background.png');
-  background-size: 100vw 100vh;
+  background-size: 40vw auto;
+  position: absolute;
+  aspect-ratio: 2360/1640;
+  width: 40vw;
+  top: 10vw;
+  left: 15vw;
+  border-radius: 1rem;
+  box-shadow: 0 0 5rem #8eaa87;
+}
+
+main {
+  position: relative;
+}
+
+.map-workstation {
+  width: 100vw;
+  height: min-content;
 }
 
 /* Simialr code, just change png */
 .map {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 40vw;
+  aspect-ratio: 2360/1640;
+
+  border-radius: 1rem;
+
   background: url('/assets/map/map-cloud-frame.png');
-  background-size: 100vw 100vh;
+  background-size: 40vw auto;
 }
 
 .map-icon-container {
   position: absolute;
   transform: translate(-50%, -50%);
   transition: transform 0.3s ease;
-  z-index: 6;
 }
 
 .map-icon-container:hover {
@@ -24,7 +42,7 @@
 }
 
 .map-icon {
-  width: 15vw;
+  width: 6vw;
   height: auto;
 }
 
@@ -68,79 +86,135 @@
 #fire-island {
   top: 52%;
   left: 30%;
-  z-index: 3;
 }
 
 #fire-island-img {
-  width: 30vw;
+  width: 12vw;
 }
 
 #air-island-br {
   top: 60%;
   left: 83%;
-  z-index: 4;
 }
 
 #air-island-br-img {
-  width: 7.5vw;
+  width: 3vw;
 }
 
 #air-island-lt {
   top: 37%;
   left: 27%;
-  z-index: 4;
 }
 
 #air-island-lt-img {
-  width: 15vw;
+  width: 6vw;
 }
 
 #air-island-bl {
   top: 65%;
   left: 43%;
-  z-index: 4;
 }
 
 #air-island-bl-img {
-  width: 20vw;
+  width: 8vw;
 }
 
 #earth-island {
   top: 48%;
   left: 60%;
-  z-index: 2;
 }
 
 #earth-island-img {
-  width: 50vw;
+  width: 20vw;
 }
 
 #water-island-top {
   top: 15%;
   left: 50%;
-  z-index: 5;
 }
 #water-island-img-top {
-  width: 20vw;
+  width: 8vw;
 }
 
 #water-island-bottom {
   top: 85%;
   left: 50%;
-  z-index: 5;
 }
 
 #water-island-img-bottom {
-  width: 20vw;
+  width: 5vw;
 }
 
 .links-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0.5rem;
+  position: fixed;
+  background-color: #e1b790;
+  border-radius: 1rem;
+  bottom: 1rem;
+  left: 1rem;
 }
 
 .links-container a img {
+  background-color: hsl(29, 57%, 50%);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
   height: 10vh;
+  transition: scale 100ms ease;
+}
+
+.links-container a img:hover {
+  scale: 110%;
+}
+
+@media (width < 144vh) {
+  #map-container {
+    background-size: auto 40vh;
+    height: 40vh;
+    width: min-content;
+    top: 15vh;
+    left: 20vh;
+  }
+
+  .map-workstation {
+    height: 100vh;
+    width: min-content;
+  }
+
+  .map {
+    height: 40vh;
+    width: min-content;
+    background-size: auto 40vh;
+  }
+
+  .map-icon {
+    width: 9vh;
+  }
+
+  #fire-island-img {
+    width: 18vh;
+  }
+
+  #air-island-br-img {
+    width: 4.5vh;
+  }
+
+  #air-island-lt-img {
+    width: 9vh;
+  }
+
+  #air-island-bl-img {
+    width: 12vh;
+  }
+
+  #earth-island-img {
+    width: 30vh;
+  }
+
+  #water-island-img-top {
+    width: 12vh;
+  }
+
+  #water-island-img-bottom {
+    width: 7.5vh;
+  }
 }
