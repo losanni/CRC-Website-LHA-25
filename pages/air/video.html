@@ -26,9 +26,42 @@
 
       <section id="roster">
         <h1 id="video">Video</h1>
-        <video></video>
+        <div class="video-container">
+          <iframe 
+              src="https://www.youtube.com/embed/x7PZ7KQvtIo?si=zGeh9qWGeHkvbfdy" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+          </iframe>
+        </div>
       </section>
 
       <section id="roster">
         <h1 id="tutorial">Tutorial</h1>
+        <div class="video-container">
+          <iframe 
+              src="https://www.youtube.com/embed/76Y51fijgwg?si=S8Or2xWnUetjQ8Nf" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+          </iframe>
+        </div>
       </section>
+
+      </main>
+
+      <style>
+          .video-container {
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        iframe {
+          width: 90%;
+          height: 90%;
+        }
+      </style>
+      </body>
