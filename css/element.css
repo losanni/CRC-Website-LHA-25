@@ -57,27 +57,6 @@ li {
   position: relative;
 }
 
-/*
-.journal-img {
-  width: 100%;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.journal-img img {
-  border: var(--primary-color) 0.25rem solid;
-  border-radius: 5%;
-  max-width: 100%;
-  max-height: 50vh;
-  height: auto;
-  display: block;
-}
-
 */
 .journal-img {
   margin: 1rem -1.5rem;
