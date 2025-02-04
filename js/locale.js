@@ -66,10 +66,18 @@ if (
         elementToTR.innerText = frTranslationsAsObj[key]
       })
 
+      //Change the logos 
+
+      if (document.getElementById("teamLogo") !== null) {
+        const teamLogo = document.getElementById("teamLogo");
+        teamLogo.src = teamLogo.src.replace(/\.png$/, '-fr.png')
+      }
+
       const regex = /fire|water|earth|air/ // Test for fire,water,earth,air
 
       // THis is for the basic titles(Janauary -> Janvier)
       if (regex.test(frTranslationsUrl)) {
+
         console.log('changing')
         const response = await fetch(
           `${window.location.origin}/pages/roster-fr.json`

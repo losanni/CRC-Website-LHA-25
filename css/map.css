@@ -84,12 +84,13 @@ main {
 }
 
 .map-island-container:hover {
-  transform: translate(-50%, -50%) scale(1.25); /* For some reason keep the center code */
+  transform: translate(-50%, -50%) scale(1.1); /* For some reason keep the center code */
 }
 
 #fire-island {
   top: 52%;
   left: 30%;
+  z-index: 6;
 }
 
 #fire-island-img {
@@ -99,6 +100,7 @@ main {
 #air-island-br {
   top: 60%;
   left: 83%;
+  z-index: 7;
 }
 
 #air-island-br-img {
@@ -108,6 +110,7 @@ main {
 #air-island-lt {
   top: 37%;
   left: 27%;
+  z-index: 7;
 }
 
 #air-island-lt-img {
@@ -117,6 +120,7 @@ main {
 #air-island-bl {
   top: 65%;
   left: 43%;
+  z-index: 7;
 }
 
 #air-island-bl-img {
@@ -181,7 +185,8 @@ main {
 
   .map-workstation {
     height: 100vh;
-    width: min-content;
+    width: auto;
+    overflow: hidden;
   }
 
   .map {
