@@ -213,6 +213,11 @@ main {
 }
 
 @media (width < 144vh) {
+
+  .scrollPictureContainer {
+    display: none;
+  }
+
   #map-container {
     background-size: auto 40vh;
     height: 40vh;
