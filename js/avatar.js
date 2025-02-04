@@ -35,11 +35,11 @@ document.body.innerHTML += `
   </a>
 
   
-  <a href="#" class="disabled-link" id="avatar-icon-link">
+  <a href="/pages/air/video.html" class="disabled-link" id="avatar-icon-link">
     <img
       class="avatar-progress-icon"
       id="avatar-prog-avatar-icon"
-      src="https://placehold.co/600x400/EEE/31343C"
+      src="/assets/LHA/video.png"
       alt="Avatar Progress Avatar Icon"
     />
   </a>

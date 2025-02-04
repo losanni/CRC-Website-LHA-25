@@ -21,6 +21,7 @@ main {
 .map-workstation {
   width: 100vw;
   height: min-content;
+  position: relative;
 }
 
 /* Simialr code, just change png */
@@ -44,6 +45,43 @@ main {
 .map-icon-container:hover {
   transform: translate(-50%, -50%) scale(1.25); /* For some reason keep the center code */
 }
+
+.scrollPictureContainer {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+  z-index: 100;
+  overflow: scroll;
+}
+
+.scrollPictureContainer:hover {
+  transform: translate(-50%, -50%) scale(1.25); /* Keeps centering */
+}
+
+.scrollPictureContainerImg {
+  width: 10vw;
+  height: auto;
+}
+
+#LHA {
+  left: 83%;
+  top: 46%;
+}
+
+#CRC {
+  left: 94%;
+  top: 40%;
+}
+
+#CRCIMG {
+  width: 9vw;
+}
+
+#Video {
+  left: 71%;
+  top: 50%;
+}
+
 
 .map-icon {
   width: 6vw;
